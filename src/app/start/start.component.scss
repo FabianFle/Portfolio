@@ -1,0 +1,92 @@
+.startDiv {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(20, 29, 47);
+}
+
+.myDiv {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+.profielImg {
+    height: 805px;
+}
+
+.nameRotateDiv {
+    position: absolute;
+    top: 250px;
+    right: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.rotateDiv {
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+
+    span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 120%;
+    }
+}
+
+.rightDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorWhite {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+}
+
+.colorBlue {
+    color: #4B47FF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+}
+
+.letsTalkBtn {
+    z-index: 2;
+    position: absolute;
+    width: 165px;
+    height: 58px;
+    right: 208px;
+    top: 212px;
+    background: #00BEE8;
+    color: white;
+    font-size: 24px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        background-color: #4B47FF;
+        transform: scale(1.2);
+    }
+}
+
+.designElement {
+    position: absolute;
+    height: 1104.6px;
+    top: 341px;
+    width: 100%;
+}

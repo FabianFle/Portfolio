@@ -1,0 +1,134 @@
+.backgroundAbout {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: absolute;
+    top: 1070px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(20, 29, 47);
+}
+
+.aboutMeDiv {
+    position: absolute;
+    top: 940px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.iconScrollDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconDiv {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        margin-right: 20px;
+    }
+}
+
+.iconAbout {
+    width: 30px;
+    margin-right: 42px;
+}
+
+.line1 {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.emailAbout {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+}
+
+.scrollRotate {
+    transform: rotate(90deg);
+    margin-right: 30px;
+
+    span {
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+    }
+
+    img {
+        transform: rotate(-90deg);
+    }
+}
+
+.aboutMeSite {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 1090px;
+}
+
+.marginLeft {
+    margin-left: 150px;
+}
+
+.h1SpanDiv {
+    max-width: 510px;
+    margin-bottom: 50px;
+}
+
+.aboutH1 {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    width: 510px;
+}
+
+.imgAndSpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 470px;
+    margin-bottom: 25px;
+
+    img {
+        margin: 30px;
+        margin-right: 60px;
+    }
+}
+
+.colorWhite {
+    color: white;    
+}
+
+.roundImgSpanDiv {
+    position: absolute;
+    right: 0;
+    top: 112px;
+    display: flex;
+    align-items: center;
+}
+
+.roundImg {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 4px solid #00BEE8;
+}
+
+.line7 {
+    height: 4px;
+    width: 100px;
+}

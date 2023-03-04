@@ -1,0 +1,108 @@
+.skillDiv {
+    position: absolute;
+    top: 1635px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background: rgb(20, 29, 47);
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.renderSkills {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 780px;
+    margin-left: 160px;
+    margin-top: 175px;
+}
+
+.headlineSkillsAndText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+}
+
+.imgAndSpan {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-bottom: 80px;
+
+    span {
+        margin-top: 6px;
+        text-align: center;
+    }
+}
+
+.skillImg {
+    width: 65px;
+    height: 65px;
+}
+
+.skillName {
+    color: white;
+}
+
+.headlineAndimg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 120%;
+        margin-right: 50px;
+    }
+
+    img {
+        width: 50px;
+        height: 4px;
+    }
+}
+
+.spanAndBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.spanText {
+    color: white;
+    text-align: right;
+    margin-right: 110px;
+    max-width: 510px;
+}
+
+.getIntTouchBtn {
+    background: #00BEE8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 200px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: white;
+    margin-top: 80px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        background-color: #4B47FF;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
