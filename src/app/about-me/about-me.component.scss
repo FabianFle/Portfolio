@@ -53,6 +53,7 @@
 }
 
 .scrollRotate {
+    z-index: 2;
     transform: rotate(90deg);
     margin-right: 30px;
 
@@ -130,5 +131,13 @@
 
 .line7 {
     height: 4px;
-    width: 100px;
+    width: 300px;
+}
+
+.shadowGraficDiv{
+    z-index: 1;
+    position: absolute;
+    top: 850px;
+    right: -410px;
+    overflow: hidden;
 }
