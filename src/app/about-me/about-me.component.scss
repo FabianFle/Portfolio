@@ -36,6 +36,11 @@
 .iconAbout {
     width: 30px;
     margin-right: 42px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.4);
+    }
 }
 
 .line1 {
@@ -107,6 +112,11 @@
     img {
         margin: 30px;
         margin-right: 60px;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.3);
+        }
     }
 }
 

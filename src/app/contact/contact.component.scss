@@ -1,0 +1,156 @@
+.contactDiv {
+    position: absolute;
+    top: 5430px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #141D2F;
+}
+
+.contactHeadlin {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100px;
+        height: 4px;
+    }
+
+    h1 {
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 120%;
+        margin-left: 50px;
+    }
+}
+
+.contactInfosAndInputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.contactInfos {
+    max-width: 430px;
+
+    span {
+        color: white;
+    }
+}
+
+.headInfosSpan {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.infoSpan {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+
+.formInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    input {
+        background-color: transparent;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        width: 500px;
+        height: 30px;
+        padding: 15px 25px;
+        margin-bottom: 30px;
+        transition: all 125ms ease-in-out;
+
+        &::placeholder {
+            color: white;
+            font-family: 'Poppins';
+        }
+
+        &:hover {
+            border: 1px solid #00BEE8;
+        }
+    }
+
+    textarea {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        width: 500px;
+        height: 200px;
+        padding: 15px 25px;
+        margin-bottom: 30px;
+        transition: all 125ms ease-in-out;
+
+        &::placeholder {
+            color: white;
+            font-family: 'Poppins';
+        }
+
+        &:hover {
+            border: 1px solid #00BEE8;
+        }
+    }
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.sendMessageBtn {
+    background: #00BEE8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        background-color: #4B47FF;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.goUp {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    right: 100px;
+    top: 6270px;
+    border-radius: 41px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        background-color: #00BEE8;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.purpleShadowEffect {
+    position: absolute;
+    top: 5930px;
+    left: -200px;
+}

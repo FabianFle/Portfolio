@@ -17,11 +17,11 @@
 }
 
 .projektDiv {
+    z-index: 20;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 100px;
-    background-color: rgb(20, 29, 47);
+    padding-bottom: 130px;
 }
 
 .projektInfos {
@@ -97,7 +97,7 @@
 }
 
 .projektDivPosition {
-    background-color: rgb(20, 29, 47);
+    z-index: 5;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -131,6 +131,7 @@
     font-size: 23px;
     line-height: 120%;
     margin-right: 100px;
+    transition: all 125ms ease-in-out;
 
     &:hover {
         cursor: pointer;
@@ -149,6 +150,7 @@
     border-radius: 10px;
     width: 152px;
     height: 58px;
+    transition: all 125ms ease-in-out;
 
     &:hover {
         cursor: pointer;
@@ -157,7 +159,29 @@
 }
 
 .frameImg {
-    width: 400px;
-    height: 200px;
+    width: 480px;
+    height: 250px;
     object-fit: contain;
+}
+
+.backgroundProjekt {
+    position: absolute;
+    top: 3300px;
+    height: 230vh;
+    width: 100vw;
+    max-width: 100%;
+    background: rgb(20, 29, 47);
+}
+
+.dBlue2Graffic {
+    z-index: 1;
+    position: absolute;
+    top: 3500px;
+}
+
+.lBlue2Graffic {
+    z-index: 1;
+    position: absolute;
+    top: 4200px;
+    right: 0;
 }

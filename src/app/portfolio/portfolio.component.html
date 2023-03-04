@@ -12,7 +12,7 @@
 </div>
 
 <div class="projektDivPosition">
-    <div *ngFor="let projekt of projekte; let i = index" class="projektDiv margin-top">
+    <div *ngFor="let projekt of projekte; let i = index" class="projektDiv">
         <div *ngIf="i % 2 == 0" class="projektInfos">
             <h2>{{ projekt.name }}</h2>
             <span class="programmingLanguageSpan">{{ projekt.programmingLanguage }}</span>
@@ -38,4 +38,14 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="backgroundProjekt"></div>
+
+<div class="dBlue2Graffic">
+    <img src="assets/img/D. blue 2 P.png">
+</div>
+
+<div class="lBlue2Graffic">
+    <img src="assets/img/L. blue 2.png">
 </div>
