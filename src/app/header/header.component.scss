@@ -47,49 +47,64 @@
 }
 
 
+// ===========================
+// ======== - Media - ========
+// ===========================
 
+@media (min-width: 721px) {
+    .headerMenuMobilDiv {
+        display: none;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1500px) {
+@media (max-width: 720px) {
 
     .headerMenuMobilDiv {
-        width: 390px;
-        height: 844px;
-        background-color: rgba(20, 29, 47, 0.8);
-        z-index: 1;
+
+        img {
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
     }
 
-    .menuIcon {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
+    .headerMenuPosition {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        right: 50px;
     }
 
     .headerMenuMobil {
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        background-color: rgb(21, 30, 48, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 1;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 23px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+            transition: all 125ms ease-in-out;
+
+            &:hover {
+                color: rgb(0, 190, 232);
+            }
+        }
     }
 
-    a {
-        margin-bottom: 33px;
-        color: white;
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 120%;
+    .headerMenu {
+        display: none;
     }
+
 }

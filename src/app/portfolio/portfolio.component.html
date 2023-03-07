@@ -1,8 +1,8 @@
-<div class="portfolie">
+<div class="portfolie" id="portfolio">
 
     <div class="headlineAndLine">
         <div class="headlineDiv">
-            <img src="assets/img/Vector 1.png">
+            <img src="assets/img/Vector 1.png" class="smallLine">
             <span class="headlineName">Portfolio</span>
             <img class="lineLong" src="assets/img/Vector 1.png">
         </div>
@@ -13,30 +13,38 @@
 
 <div class="projektDivPosition">
     <div *ngFor="let projekt of projekte; let i = index" class="projektDiv">
-        <div *ngIf="i % 2 == 0" class="projektInfos">
-            <h2>{{ projekt.name }}</h2>
-            <span class="programmingLanguageSpan">{{ projekt.programmingLanguage }}</span>
-            <span class="projektText">{{ projekt.text }}</span>
-            <div>
-                <button class="liveTestBtn">Live test</button>
-                <button class="githubBtn">Github</button>
+        <div class="projektInfo1Div">
+            <div *ngIf="i % 2 == 0" class="projektInfos">
+                <h2>{{ projekt.name }}</h2>
+                <span class="programmingLanguageSpan">{{ projekt.programmingLanguage }}</span>
+                <span class="projektText">{{ projekt.text }}</span>
+                <div>
+                    <a href="{{ projekt.link }}"><button class="liveTestBtn">Live test</button></a>
+                    <a href="{{ projekt.linkGit }}"><button class="githubBtn">Github</button></a>
+                </div>
+            </div>
+
+            <div *ngIf="i % 2 == 0" class="projekt1">
+                <img class="frameImg" src="assets/img/{{ projekt.img }}">
             </div>
         </div>
-        <div *ngIf="i % 2 == 0">
-            <img class="frameImg" src="assets/img/{{ projekt.img }}">
-        </div>
-        <div *ngIf="i % 2 != 0">
-            <img class="frameImg" src="assets/img/{{ projekt.img }}">
-        </div>
-        <div *ngIf="i % 2 != 0" class="projektInfos1">
-            <h2>{{ projekt.name }}</h2>
-            <span class="programmingLanguageSpan">{{ projekt.programmingLanguage }}</span>
-            <span class="projektText">{{ projekt.text }}</span>
-            <div>
-                <button class="liveTestBtn">Live test</button>
-                <button class="githubBtn">Github</button>
+
+        <div class="projektInfo2Div">
+            <div *ngIf="i % 2 != 0" class="projekt2">
+                <img class="frameImg" src="assets/img/{{ projekt.img }}">
+            </div>
+
+            <div *ngIf="i % 2 != 0" class="projektInfos1">
+                <h2>{{ projekt.name }}</h2>
+                <span class="programmingLanguageSpan">{{ projekt.programmingLanguage }}</span>
+                <span class="projektText">{{ projekt.text }}</span>
+                <div>
+                    <a href="{{ projekt.link }}"><button class="liveTestBtn">Live test</button></a>
+                    <a href="{{ projekt.linkGit }}"><button class="githubBtn">Github</button></a>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 

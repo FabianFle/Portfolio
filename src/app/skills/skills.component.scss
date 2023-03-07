@@ -120,3 +120,140 @@
     top: 2170px;
     left: 0px;
 }
+
+.backgroudSkill {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background: rgb(20, 29, 47);
+    position: absolute;
+    top: 2500px;
+}
+
+
+// ===========================
+// ======== - Media - ========
+// ===========================
+
+@media (max-width: 1350px) {
+    .renderSkills {
+        margin-top: 540px;
+    }
+
+    .getIntTouchBtn {
+        z-index: 2;
+        position: absolute;
+        top: 800px;
+        left: calc(50% - 158px/2);
+    }
+
+    .headlineSkillsAndText {
+        top: 200px;
+    }
+
+    .renderSkills {
+        max-width: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .renderSkills {
+        margin-top: 540px;
+    }
+
+    .getIntTouchBtn {
+        z-index: 2;
+        top: 800px;
+    }
+
+    .headlineSkillsAndText {
+        top: 200px;
+    }
+
+    .renderSkills {
+        max-width: none;
+    }
+
+    .imgAndSpan {
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 660px) {
+    .renderSkills {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .headlineAndimg {
+        h1 {
+            font-size: 70px;
+            margin-right: 20px;
+        }
+    }
+
+    .spanText {
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 540px) {
+    .skillImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .imgAndSpan {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .headlineSkillsAndText {
+        top: 300px;
+    }
+
+    .getIntTouchBtn {
+        top: 780px;
+    }
+}
+
+@media (max-width: 435px) {
+    .renderSkills {
+        margin-top: 680px;
+    }
+
+    .getIntTouchBtn {
+        top: 830px;
+    }
+}
+
+@media (max-width: 400px) {
+    .spanText {
+        margin-right: 50px;
+        margin-left: 35px;
+    }
+
+    .headlineAndimg {
+        h1 {
+            font-size: 40px;
+            margin-right: 10px;
+        }
+
+        img {
+            width: 35px;
+        }
+    }
+
+    .headlineSkillsAndText {
+        top: 375px;
+    }
+
+    .getIntTouchBtn {
+        top: 760px;
+    }
+}

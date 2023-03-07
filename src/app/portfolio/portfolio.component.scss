@@ -17,11 +17,17 @@
 }
 
 .projektDiv {
-    z-index: 20;
+    padding-bottom: 130px;
+}
+
+.projektInfo1Div {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 130px;
+}
+
+.projektInfo2Div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .projektInfos {
@@ -114,7 +120,7 @@
     color: white;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 120%;
     margin-right: 460px;
 }
@@ -176,12 +182,127 @@
 .dBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 3500px;
+    top: 3130px;
 }
 
 .lBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 4200px;
+    top: 3850px;
     right: 0;
+}
+
+
+// ===========================
+// ======== - Media - ========
+// ===========================
+
+@media (max-width: 1350px) {
+    .headlineDiv {
+        position: absolute;
+        top: 140px;
+        right: 0;
+    }
+
+    .projektDivPosition {
+        top: 3150px;
+    }
+
+    .spanText {
+        max-width: 400px;
+        margin-top: 380px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1165px) {
+    .headlineDiv {
+        margin-top: 85px;
+    }
+
+    .headlineName {
+        font-size: 70px;
+    }
+
+    .lineLong {
+        width: 310px;
+    }
+
+    .projektDivPosition {
+        top: 3200px;
+    }
+
+    .spanText {
+        margin-right: 310px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .projektInfo1Div {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .projektInfo2Div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projektInfos {
+        display: flex;
+        align-items: center;
+    }
+
+    .projektInfos1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .dBlue2Graffic {
+        top: 3500px;
+    }
+}
+
+@media (max-width: 910px) {
+    .lineLong {
+        width: 250px;
+    }
+
+    .spanText {
+        margin-right: 245px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .lineLong {
+        width: 100px;
+    }
+
+    .spanText {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .smallLine {
+        width: 50px;
+        height: 4px;
+    }
+
+    .headlineName {
+        margin: 10px;
+    }
+
+    .spanText {
+        margin-right: 55px;
+    }
+
+    .projektText {
+        margin-left: 10px;
+        margin-right: 10px;
+        word-wrap: break-word;
+        text-align: center;
+    }
 }

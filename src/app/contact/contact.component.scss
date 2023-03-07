@@ -1,10 +1,10 @@
 .contactDiv {
+    z-index: 2;
     position: absolute;
-    top: 5430px;
+    top: 4700px;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background-color: #141D2F;
 }
 
 .contactHeadlin {
@@ -138,7 +138,7 @@
     width: 39px;
     height: 39px;
     right: 100px;
-    top: 6270px;
+    top: 5530px;
     border-radius: 41px;
     transition: all 125ms ease-in-out;
 
@@ -151,6 +151,97 @@
 
 .purpleShadowEffect {
     position: absolute;
-    top: 5930px;
-    left: -200px;
+    top: 5150px;
+    transform: rotate(180deg);
+}
+
+.backgroundContact {
+    z-index: -1;
+    position: absolute;
+    top: 5000px;
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
+    background-color: #141D2F;
+}
+
+// ===========================
+// ======== - Media - ========
+// ===========================
+
+@media (max-width: 1350px) {
+    .contactDiv {
+        top: 4850px;
+    }
+
+    .goUp {
+        top: 5690px;
+    }
+
+    .contactInfosAndInputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formInput {
+        margin-top: 100px;
+    }
+
+    .contactDiv {
+        height: 140vh;
+    }
+
+    .goUp {
+        top: 6000px;
+    }
+
+    .backgroundContact {
+        height: 130vh;
+    }
+}
+
+@media (max-width: 1030px) {
+    .contactDiv {
+        top: 5800px;
+    }
+
+    .backgroundContact {
+        height: 240vh;
+    }
+
+    .goUp {
+        top: 6900px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contactHeadlin {
+        h1 {
+            font-size: 70px;
+            margin-left: 20px;
+        }
+
+        img {
+            width: 70px;
+        }
+    }
+
+    .formInput {
+        input {
+            width: 340px;
+        }
+
+        textarea {
+            width: 340px;
+        }
+    }
+
+    .goUp {
+        top: 6850px;
+    }
+
+    .contactInfosAndInputs {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
