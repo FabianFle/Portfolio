@@ -119,6 +119,7 @@
     position: absolute;
     top: 2170px;
     left: 0px;
+    overflow: hidden;
 }
 
 .backgroudSkill {
@@ -183,6 +184,9 @@
 @media (max-width: 660px) {
     .renderSkills {
         margin-left: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

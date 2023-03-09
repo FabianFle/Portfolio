@@ -202,6 +202,12 @@
 
     .lBlueGraffic {
         left: 320px;
+        top: 80px;
+
+        img {
+            height: 400px;
+            width: 400px;
+        }
     }
 
     .designElement {
@@ -240,6 +246,18 @@
     }
 }
 
+@media (max-width: 750px) {
+    .lBlueGraffic {
+        left: 270px;
+        top: 80px;
+
+        img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+}
+
 @media (max-width: 660px) {
     .myDiv {
         left: 10%;
@@ -264,8 +282,22 @@
     }
 
     .lBlueGraffic {
-        left: 60px;
-        top: 20px;
+        right: 0px;
+        top: 80px;
+        overflow: hidden;
+        img {
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+
+    .dBlueGraffic {
+        img {
+            width: 260px;
+            height: 600px;
+        }
     }
 }
 
@@ -300,6 +332,7 @@
 }
 
 @media (max-width: 430px) {
+
     .designElement {
         height: 300px;
         top: 530px;

@@ -183,13 +183,15 @@
     z-index: 1;
     position: absolute;
     top: 3130px;
+    overflow: hidden;
 }
 
 .lBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 3850px;
+    top: 4000px;
     right: 0;
+    overflow: hidden;
 }
 
 
@@ -282,6 +284,14 @@
     .spanText {
         margin-right: 100px;
     }
+
+    .dBlue2Graffic {
+        top: 3700px;
+        img {
+            width: 500px;
+            height: 600px;
+        }
+    }
 }
 
 @media (max-width: 630px) {
@@ -304,5 +314,40 @@
         margin-right: 10px;
         word-wrap: break-word;
         text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .dBlue2Graffic {
+        top: 3700px;
+        img {
+            width: 400px;
+            height: 600px;
+        }
+    }
+
+    .liveTestBtn {
+        margin: 10px;
+    }
+
+    .headlineDiv {
+        margin-top: 150px;
+    }
+
+    .lineLong {
+        width: 30px;
+    }
+
+    .headlineName{
+        font-size: 60px;
+    }
+
+    .spanText {
+        margin-top: 420px;
+        margin-right: 5px;
+    }
+
+    .frameImg {
+        width: 300px;
     }
 }

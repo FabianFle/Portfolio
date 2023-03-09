@@ -19,11 +19,11 @@
             </div>
         </div>
         <div>
-            <form action="" class="formInput">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                <button class="sendMessageBtn">Send message :)</button>
+            <form (submit)="sendMail()" method="post" class="formInput" ngNativeValidate #myForm>
+                <input required type="text" placeholder="Your name" #nameField>
+                <input required type="text" placeholder="Your email" #emailField>
+                <textarea required name="" id="" cols="30" rows="10" placeholder="Your message" #messageField></textarea>
+                <button class="sendMessageBtn" #sendButton>Send message :)</button>
             </form>
         </div>
     </div>

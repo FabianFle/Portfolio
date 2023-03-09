@@ -49,9 +49,12 @@
     margin-right: 40px;
 }
 
+.emailAboutLink {
+    text-decoration: none;
+}
+
 .emailAbout {
     color: white;
-    text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
@@ -80,7 +83,7 @@
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     top: 1090px;
 }
@@ -146,10 +149,11 @@
 }
 
 .shadowGraficDiv {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 850px;
     right: 0;
+    overflow: hidden;
 }
 
 
@@ -172,7 +176,6 @@
     .shadowGraficDiv {
         top: 770px;
         right: 0;
-        width: 240px;
     }
 }
 
@@ -222,14 +225,13 @@
     .scrollRotate {
         display: none;
     }
+
+    .iconAbout {
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 550px) {
-    .aboutMeSite {
-        margin-right: 20px;
-        margin-left: 20px
-    }
-
     .imgAndSpanDiv{
         margin-right: 30px;
     }
@@ -253,12 +255,21 @@
         margin-right: 80px;
         word-wrap: break-word;
     }
+
+    .shadowGraficDiv {
+        z-index: 2;
+        overflow: hidden;
+        img {
+            width: 300px;
+            height: 600px;
+        }
+    }
 }
 
 @media (max-width: 510px) {
     .backgroundAbout {
         z-index: 1;
-        top: 720px;
+        top: 725px;
     }
 }
 
