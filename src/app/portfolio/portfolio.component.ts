@@ -21,7 +21,7 @@ export class PortfolioComponent {
       img: 'JoinFrame.png',
       programmingLanguage: 'JavaScript | HTML | CSS | Git',
       text: 'HIER MUSS ICH NOCH EINEN TEXT SCHREIBEN FÜR DIE ANWENDUNG',
-      link: 'https://fabian-flegler.developerakademie.net/02-Gruppen-Projekte/Join---group-work/index.html',
+      link: 'https://fabianflegler-join.de',
       linkGit: 'https://github.com/FabianFle/Join.git',
     },
     {
@@ -29,7 +29,7 @@ export class PortfolioComponent {
       img: 'ElPolloLocoFrame.png',
       programmingLanguage: 'JavaScript | HTML | CSS',
       text: 'HIER MUSS ICH NOCH EINEN TEXT SCHREIBEN FÜR DIE ANWENDUNG',
-      link: 'https://fabian-flegler.developerakademie.net/04-Projekte/ElPolloLoco/index.html',
+      link: 'https://fabianflegler-elpolloloco.de',
       linkGit: 'https://github.com/FabianFle/El-Pollo-Loco.git',
     },
     {
