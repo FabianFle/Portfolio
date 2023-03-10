@@ -22,8 +22,18 @@
             <form (submit)="sendMail()" method="post" class="formInput" ngNativeValidate #myForm>
                 <input required type="text" placeholder="Your name" #nameField>
                 <input required type="text" placeholder="Your email" #emailField>
-                <textarea required name="" id="" cols="30" rows="10" placeholder="Your message" #messageField></textarea>
+                <textarea required name="" id="" cols="30" rows="10" placeholder="Your message"
+                    #messageField></textarea>
                 <button class="sendMessageBtn" #sendButton>Send message :)</button>
+                <div class="loaderDiv loaderDNone" id="loaderDNone">
+                    <div class="loader"></div>
+                    <div class="loader2"></div>
+                </div>
+                <div class="emailSendDiv loaderDNone" id="emailSendDiv">
+                    <span>
+                        E-Mail wurde versendet.
+                    </span>
+                </div>
             </form>
         </div>
     </div>

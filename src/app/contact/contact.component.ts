@@ -12,15 +12,21 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  async sendMail() {
+
+  sendMail() {
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
-    nameField.disable = true;
-    emailField.disable = true;
-    messageField.disable = true;
+    this.mailSendToServer(nameField, emailField, messageField);
+    this.BtnDisable();
 
-    debugger
+    setTimeout(() => {
+      this.BtnDisableFlase();
+    }, 3000);
+  }
+
+
+  async mailSendToServer(nameField: HTMLInputElement, emailField: HTMLInputElement, messageField: HTMLInputElement) {
     let fd = new FormData();
     fd.append('nameField', nameField.value)
     fd.append('emailField', emailField.value)
@@ -31,5 +37,34 @@ export class ContactComponent {
         body: fd
       }
     )
+  }
+
+
+  BtnDisable() {
+    this.nameField.nativeElement.disable = true;
+    this.emailField.nativeElement.disable = true;
+    this.messageField.nativeElement.disable = true;
+    document.getElementById('loaderDNone')?.classList.remove('loaderDNone');
+  }
+
+
+  BtnDisableFlase() {
+    this.nameField.nativeElement.disable = false;
+    this.emailField.nativeElement.disable = false;
+    this.messageField.nativeElement.disable = false;
+    document.getElementById('loaderDNone')?.classList.add('loaderDNone');
+    document.getElementById('emailSendDiv')?.classList.remove('loaderDNone');
+
+    setTimeout(() => {
+      document.getElementById('emailSendDiv')?.classList.add('loaderDNone');
+    }, 5000)
+
+    this.inputValueNull();
+  }
+
+  inputValueNull() {
+    this.nameField.nativeElement.value = '';
+    this.emailField.nativeElement.value = '';
+    this.messageField.nativeElement.value = '';
   }
 }
