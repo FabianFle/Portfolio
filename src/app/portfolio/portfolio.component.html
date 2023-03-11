@@ -1,6 +1,6 @@
 <div class="portfolie" id="portfolio">
 
-    <div class="headlineAndLine">
+    <div class="headlineAndLine" data-aos="fade-left">
         <div class="headlineDiv">
             <img src="assets/img/Vector 1.png" class="smallLine">
             <span class="headlineName">Portfolio</span>
@@ -13,7 +13,7 @@
 
 <div class="projektDivPosition">
     <div *ngFor="let projekt of projekte; let i = index" class="projektDiv">
-        <div class="projektInfo1Div">
+        <div class="projektInfo1Div" data-aos="slide-left">
             <div *ngIf="i % 2 == 0" class="projektInfos">
                 <h2>{{ projekt.name }}</h2>
                 <span class="programmingLanguageSpan">{{ projekt.programmingLanguage }}</span>
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="projektInfo2Div">
+        <div class="projektInfo2Div" data-aos="slide-right">
             <div *ngIf="i % 2 != 0" class="projekt2">
                 <img class="frameImg" src="assets/img/{{ projekt.img }}">
             </div>

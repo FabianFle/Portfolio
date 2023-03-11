@@ -12,6 +12,7 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
+  constructor() {}
 
   sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -33,10 +34,17 @@ export class ContactComponent {
     fd.append('messageField', messageField.value)
     await fetch('https://fabianflegler.de/send_mail.php',
       {
-        method: 'post',
+        method: 'POST',
         body: fd
       }
     )
+    this.examineText(nameField, emailField, messageField);
+  }
+
+  examineText(nameField: HTMLInputElement, emailField: HTMLInputElement, messageField: HTMLInputElement) {
+    nameField.value = nameField.value.replace (/<>/, "_");
+    emailField.value = emailField.value.replace (/<>/, "_");
+    messageField.value = messageField.value.replace (/<>/, "_");
   }
 
 
