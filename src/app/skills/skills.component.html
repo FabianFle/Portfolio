@@ -1,8 +1,10 @@
 <div class="skillDiv" id="skills">
     <div class="renderSkills">
-        <div *ngFor="let skill of skills; let i = index" class="imgAndSpan" data-aos="zoom-in-down">
-            <img class="skillImg" src="assets/img/Icon/{{skill.img}}">
-            <span class="skillName">{{skill.name}}</span>
+        <div *ngFor="let skill of skills; let i = index" class="imgAndSpan">
+            <div data-aos="zoom-in-down" class="imgAndSpanDiv">
+                <img class="skillImg" src="assets/img/Icon/{{skill.img}}">
+                <span class="skillName">{{skill.name}}</span>
+            </div>
         </div>
     </div>
     <div class="headlineSkillsAndText" data-aos="fade-left">

@@ -31,10 +31,6 @@
 .imgAndSpan {
     width: 100px;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin-right: 70px;
     margin-bottom: 80px;
     transition: all 125ms ease-in-out;
@@ -47,6 +43,13 @@
         margin-top: 6px;
         text-align: center;
     }
+}
+
+.imgAndSpanDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .skillImg {
@@ -139,6 +142,7 @@
 @media (max-width: 1350px) {
     .renderSkills {
         margin-top: 540px;
+        justify-content: center;
     }
 
     .getIntTouchBtn {
