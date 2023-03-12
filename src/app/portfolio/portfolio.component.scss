@@ -75,6 +75,19 @@
     font-size: 16px;
     line-height: 120%;
     margin-bottom: 50px;
+    max-width: 400px;
+    text-align: end;
+}
+
+.projektText1 {
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 50px;
+    max-width: 400px;
+    text-align: start;
 }
 
 .headlineName {
@@ -182,7 +195,7 @@
 .dBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 3130px;
+    top: 330 0px;
     overflow: hidden;
 }
 
@@ -262,6 +275,11 @@
 
     .dBlue2Graffic {
         top: 3500px;
+
+        img {
+            width: 500px;
+            height: 790px;
+        }
     }
 }
 
@@ -272,6 +290,14 @@
 
     .spanText {
         margin-right: 245px;
+    }
+
+    .dBlue2Graffic {
+        top: 3600px;
+        img {
+            width: 550px;
+            height: 790px;
+        }
     }
 }
 
@@ -287,6 +313,7 @@
 
     .dBlue2Graffic {
         top: 3700px;
+
         img {
             width: 500px;
             height: 600px;
@@ -320,6 +347,7 @@
 @media (max-width: 550px) {
     .dBlue2Graffic {
         top: 3700px;
+
         img {
             width: 400px;
             height: 600px;
@@ -338,7 +366,7 @@
         width: 30px;
     }
 
-    .headlineName{
+    .headlineName {
         font-size: 60px;
     }
 

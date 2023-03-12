@@ -16,6 +16,7 @@
 
 .profielImg {
     height: 805px;
+    object-fit: cover;
 }
 
 .nameRotateDiv {
@@ -79,6 +80,7 @@
     transition: all 125ms ease-in-out;
 
     &:hover {
+        cursor: pointer;
         background-color: #4B47FF;
         transform: scale(1.2);
     }

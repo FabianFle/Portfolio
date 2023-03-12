@@ -75,4 +75,6 @@ export class ContactComponent {
     this.emailField.nativeElement.value = '';
     this.messageField.nativeElement.value = '';
   }
+
+  
 }

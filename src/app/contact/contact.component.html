@@ -10,21 +10,23 @@
             </div>
             <div class="margin-top">
                 <span class="infoSpan">
-                    Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
-                    your projects with my work.
+                    Contact me through this form, I am interested in hearing you, knowing your ideas, and contributing
+                    to your projects with my work.
                     <br>
                     <br>
-                    Need a Frontend developer? <b>Contact me!</b>
+                    Need a front-end developer? <b>Contact me!</b>
                 </span>
             </div>
         </div>
         <div>
             <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
                 <input required type="text" placeholder="Your name" #nameField data-aos="slide-left">
-                <input required type="text" placeholder="Your email" #emailField data-aos="slide-left">
-                <textarea required name="" id="" cols="30" rows="10" placeholder="Your message" #messageField
+                <input required type="email" placeholder="Your email" #emailField data-aos="slide-left">
+                <textarea required cols="30" rows="10" placeholder="Your message" #messageField
                     data-aos="slide-left"></textarea>
-                <button class="sendMessageBtn" #sendButton data-aos="slide-left">Send message :)</button>
+                <button class="sendMessageBtn" #sendButton data-aos="slide-left">Send
+                    message
+                    :)</button>
                 <div class="loaderDiv loaderDNone" id="loaderDNone">
                     <div class="loader"></div>
                     <div class="loader2"></div>
@@ -44,7 +46,7 @@
 </div>
 
 <div class="goUp" data-aos="fade-in">
-    <a href="#"><img src="assets/img/Icon/Go up button.png"></a>
+    <a href="#"><img class="goUpImg" src="assets/img/Icon/Go up button.png"></a>
 </div>
 
 <div class="backgroundContact"></div>
