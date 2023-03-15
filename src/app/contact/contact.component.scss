@@ -1,7 +1,7 @@
 .contactDiv {
     z-index: 2;
     position: absolute;
-    top: 4700px;
+    top: 5000px;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -142,7 +142,7 @@
     width: 39px;
     height: 39px;
     right: 100px;
-    top: 5530px;
+    top: 5750px;
     border-radius: 41px;
 }
 
@@ -166,16 +166,6 @@
     top: 5150px;
     transform: rotate(180deg);
     overflow: hidden;
-}
-
-.backgroundContact {
-    z-index: -1;
-    position: absolute;
-    top: 5000px;
-    width: 100vw;
-    height: 80vh;
-    max-width: 100%;
-    background-color: #141D2F;
 }
 
 

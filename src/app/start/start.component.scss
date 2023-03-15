@@ -1,3 +1,16 @@
+.backgroundFullSite {
+    width: 100vw;
+    max-width: 100%;
+    height: 640vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(20, 29, 47);
+}
+
+
 .startDiv {
     height: 100vh;
     width: 100vw;
@@ -6,7 +19,7 @@
 }
 
 .myDiv {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 150px;
     left: 100px;
@@ -17,9 +30,12 @@
 .profielImg {
     height: 805px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .nameRotateDiv {
+    z-index: 2;
+    overflow: hidden;
     position: absolute;
     top: 250px;
     right: 10%;
@@ -66,7 +82,6 @@
 
 .letsTalkBtn {
     border: none;
-    z-index: 2;
     position: absolute;
     width: 165px;
     height: 58px;
@@ -87,7 +102,7 @@
 }
 
 .designElement {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     height: 1104.6px;
     top: 341px;
@@ -95,12 +110,14 @@
 }
 
 .dBlueGraffic {
+    z-index: 1;
     position: absolute;
     top: 150px;
     left: 0;
 }
 
 .lBlueGraffic {
+    z-index: 1;
     position: absolute;
     top: 150px;
     left: 100px;
@@ -124,7 +141,12 @@
             font-size: 50px;
         }
     }
+}
 
+@media (max-width: 1350px) {
+    .backgroundFullSite {
+        height: 670vh;
+    }
 }
 
 @media (max-width: 1245px) {
@@ -181,11 +203,16 @@
     }
 }
 
+@media (max-width: 1030px) {
+    .backgroundFullSite {
+        height: 780vh;
+    }
+}
+
 @media (max-width: 990px) {
 
     .nameRotateDiv {
         margin: 0;
-        z-index: 5;
         right: 0;
         left: 0;
         justify-content: center;

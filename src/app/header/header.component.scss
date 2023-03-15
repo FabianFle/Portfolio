@@ -66,6 +66,7 @@
     }
 
     .headerMenuMobilDiv {
+        overflow: hidden;
         width: 100vw;
         max-width: 100%;
 
@@ -81,6 +82,7 @@
 }
 
 .wrapper {
+    overflow: hidden;
     position: fixed;
     top: 0;
     right: -100%;

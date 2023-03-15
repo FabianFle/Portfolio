@@ -3,10 +3,9 @@
     width: 100vw;
     max-width: 100%;
     position: absolute;
-    top: 2663px;
+    top: 2900px;
     left: 0;
     right: 0;
-    background: rgb(20, 29, 47);
 }
 
 .allProjekte {
@@ -21,11 +20,13 @@
 }
 
 .projektInfo1Div {
+    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
 }
 
 .projektInfo2Div {
+    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
 }
@@ -121,7 +122,7 @@
     width: 100vw;
     max-width: 100%;
     position: absolute;
-    top: 3000px;
+    top: 3300px;
 }
 
 .lineLong {
@@ -183,19 +184,10 @@
     object-fit: contain;
 }
 
-.backgroundProjekt {
-    position: absolute;
-    top: 3300px;
-    height: 230vh;
-    width: 100vw;
-    max-width: 100%;
-    background: rgb(20, 29, 47);
-}
-
 .dBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 330 0px;
+    top: 3450px;
     overflow: hidden;
 }
 
@@ -213,6 +205,10 @@
 // ===========================
 
 @media (max-width: 1350px) {
+    .portfolie {
+        top: 2670px;
+    }
+
     .headlineDiv {
         position: absolute;
         top: 140px;
@@ -227,6 +223,10 @@
         max-width: 400px;
         margin-top: 380px;
         text-align: center;
+    }
+
+    .dBlue2Graffic {
+        top: 3300px;
     }
 }
 

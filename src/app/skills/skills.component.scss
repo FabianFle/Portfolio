@@ -1,12 +1,11 @@
 .skillDiv {
     position: absolute;
-    top: 1635px;
+    top: 1800px;
     left: 0;
     right: 0;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background: rgb(20, 29, 47);
     padding-top: 100px;
     display: flex;
     align-items: center;
@@ -22,6 +21,7 @@
 }
 
 .headlineSkillsAndText {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -46,6 +46,7 @@
 }
 
 .imgAndSpanDiv {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,15 +124,6 @@
     top: 2170px;
     left: 0px;
     overflow: hidden;
-}
-
-.backgroudSkill {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    background: rgb(20, 29, 47);
-    position: absolute;
-    top: 2500px;
 }
 
 
