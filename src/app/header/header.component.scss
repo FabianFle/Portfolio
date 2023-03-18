@@ -14,7 +14,7 @@
 }
 
 .headerImg {
-    margin-left: 10%;
+    margin-left: 100px;
 
     img {
         width: 160px;
@@ -25,7 +25,7 @@
 }
 
 .headerMenu {
-    margin-right: 10%;
+    margin-right: 100px;
 
     a {
         color: white;
@@ -53,16 +53,20 @@
 // ======== - Media - ========
 // ===========================
 
-@media (min-width: 721px) {
+@media (min-width: 760px) {
     .headerMenuMobilDiv {
         display: none;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 759px) {
 
     .headerMenu {
         display: none;
+    }
+
+    .headerImg {
+        margin-left: 10px;
     }
 
     .headerMenuMobilDiv {
@@ -101,8 +105,7 @@
     position: absolute;
     z-index: 5;
     right: 20px;
-    /*left: 20px; */
-    top: 20px;
+    top: 10px;
     height: 80px;
     width: 80px;
     text-align: center;
@@ -158,8 +161,8 @@
 
 .wrapper ul {
     position: absolute;
-    top: 33%;
-    left: 23%;
+    top: 40%;
+    left: 45%;
     height: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
@@ -201,4 +204,10 @@
 
 input[type="checkbox"] {
     display: none;
+}
+
+@media (max-width: 400px) {
+    .wrapper ul li a {
+        font-size: 23px;
+    }
 }

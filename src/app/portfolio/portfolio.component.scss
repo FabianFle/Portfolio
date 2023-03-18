@@ -3,7 +3,7 @@
     width: 100vw;
     max-width: 100%;
     position: absolute;
-    top: 2900px;
+    top: 2650px;
     left: 0;
     right: 0;
 }
@@ -22,13 +22,17 @@
 .projektInfo1Div {
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .projektInfo2Div {
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .projektInfos {
@@ -67,6 +71,7 @@
     line-height: 120%;
     color: #00BEE8;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .projektText {
@@ -122,7 +127,7 @@
     width: 100vw;
     max-width: 100%;
     position: absolute;
-    top: 3300px;
+    top: 3050px;
 }
 
 .lineLong {
@@ -187,7 +192,7 @@
 .dBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 3450px;
+    top: 3200px;
     overflow: hidden;
 }
 
@@ -252,6 +257,12 @@
     }
 }
 
+@media (max-width: 1130px) {
+    .frameImg {
+        width: 380px;
+    }
+}
+
 @media (max-width: 1030px) {
     .projektInfo1Div {
         flex-direction: column-reverse;
@@ -294,6 +305,7 @@
 
     .dBlue2Graffic {
         top: 3600px;
+
         img {
             width: 550px;
             height: 790px;
@@ -318,6 +330,18 @@
             width: 500px;
             height: 600px;
         }
+    }
+}
+
+@media (max-width: 660px) {
+    .projektInfo1Div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .projektInfo2Div {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -377,5 +401,66 @@
 
     .frameImg {
         width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolie {
+        top: 2870px;
+    }
+
+    .projektDivPosition {
+        top: 3380px;
+    }
+
+    .projektDiv {
+        padding-bottom: 30px;
+    }
+
+    .headlineName {
+        font-size: 40px;
+    }
+
+    .smallLine {
+        width: 20px;
+    }
+
+    .lineLong {
+        width: 50px;
+    }
+
+    .frameImg {
+        width: 250px;
+    }
+
+    .projektInfos {
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    .dBlue2Graffic{
+        top: 3940px;
+
+        img {
+            height: 430px;
+        }
+    }
+
+    .liveTestBtn {
+        width: 115px;
+        height: 45px;
+    }
+
+    .githubBtn {
+        width: 115px;
+        height: 45px;
+    }
+
+    .projektText {
+        margin-left: 10px;
+        margin-right: 10px;
+        word-wrap: break-word;
+        text-align: center;
     }
 }

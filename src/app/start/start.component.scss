@@ -35,10 +35,9 @@
 
 .nameRotateDiv {
     z-index: 2;
-    overflow: hidden;
     position: absolute;
     top: 250px;
-    right: 10%;
+    right: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -81,6 +80,7 @@
 }
 
 .letsTalkBtn {
+    z-index: 3;
     border: none;
     position: absolute;
     width: 165px;
@@ -217,6 +217,7 @@
         left: 0;
         justify-content: center;
         top: 655px;
+        z-index: 3;
     }
 
     .letsTalkBtn {
@@ -314,6 +315,7 @@
         right: 0px;
         top: 80px;
         overflow: hidden;
+
         img {
             height: 500px;
         }
@@ -335,6 +337,18 @@
     .designElement {
         height: 412px;
         top: 462px;
+    }
+
+    .BackgroundDesignElement {
+        z-index: 2;
+        position: absolute;
+        top: 760px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 200px;
+        max-width: 100%;
+        background: rgb(20, 29, 47);
     }
 
     .myDiv {
@@ -395,5 +409,28 @@
 
     .nameRotateDiv {
         top: 675px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profielImg {
+        height: 550px;
+    }
+
+    .colorWhite {
+        font-size: 30px;
+    }
+
+    .colorBlue {
+        font-size: 20px;
+    }
+
+    .colorBlue {
+        top: 100px;
+    }
+
+    .letsTalkBtn {
+        width: 140px;
+        height: 50px;
     }
 }

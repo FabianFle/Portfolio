@@ -1,7 +1,7 @@
 .contactDiv {
     z-index: 2;
     position: absolute;
-    top: 5000px;
+    top: 4800px;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -12,7 +12,7 @@
     align-items: center;
 
     img {
-        width: 100px;
+        width: 50px;
         height: 4px;
     }
 
@@ -30,8 +30,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 110px;
+    margin-right: 130px;
 }
 
 .contactInfos {
@@ -142,7 +142,7 @@
     width: 39px;
     height: 39px;
     right: 100px;
-    top: 5750px;
+    top: 5600px;
     border-radius: 41px;
 }
 
@@ -362,5 +362,39 @@
     .goUp {
         top: 7020px;
         right: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contactDiv {
+        top: 6150px;
+    }
+
+    .contactHeadlin {
+        img {
+            width: 20px;
+        }
+
+        h1 {
+            margin-left: 10px;
+            font-size: 55px;
+        }
+    }
+
+    .formInput {
+        margin-top: 30px;
+
+        input {
+            width: 215px;
+        }
+
+        textarea {
+            width: 215px;
+            height: 120px;
+        }
+    }
+
+    .goUp {
+        top: 7110px;
     }
 }

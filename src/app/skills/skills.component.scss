@@ -1,6 +1,6 @@
 .skillDiv {
     position: absolute;
-    top: 1800px;
+    top: 1650px;
     left: 0;
     right: 0;
     height: 100vh;
@@ -15,8 +15,8 @@
     z-index: 3;
     display: flex;
     flex-wrap: wrap;
-    max-width: 780px;
-    margin-left: 160px;
+    max-width: 900px;
+    margin-left: 100px;
     margin-top: 175px;
 }
 
@@ -26,12 +26,13 @@
     flex-direction: column;
     position: absolute;
     right: 0;
+    padding-bottom: 20px;
 }
 
 .imgAndSpan {
     width: 100px;
     height: 100px;
-    margin-right: 70px;
+    margin-right: 120px;
     margin-bottom: 80px;
     transition: all 125ms ease-in-out;
 
@@ -73,11 +74,12 @@
         font-weight: 700;
         font-size: 100px;
         line-height: 120%;
-        margin-right: 50px;
+        margin-right: 60px;
+        margin-bottom: 40px;
     }
 
     img {
-        width: 50px;
+        width: 60px;
         height: 4px;
     }
 }
@@ -92,7 +94,7 @@
 .spanText {
     color: white;
     text-align: right;
-    margin-right: 110px;
+    margin-right: 130px;
     max-width: 510px;
 }
 
@@ -108,7 +110,7 @@
     font-size: 23px;
     line-height: 120%;
     color: white;
-    margin-top: 80px;
+    margin-top: 50px;
     transition: all 125ms ease-in-out;
 
     &:hover {
@@ -220,6 +222,10 @@
     .getIntTouchBtn {
         top: 780px;
     }
+
+    .renderSkills {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 435px) {
@@ -229,6 +235,12 @@
 
     .getIntTouchBtn {
         top: 830px;
+    }
+
+    .headlineAndimg {
+        h1 {
+            font-size: 60px;
+        }
     }
 }
 
@@ -255,5 +267,19 @@
 
     .getIntTouchBtn {
         top: 760px;
+    }
+}
+
+@media (max-width: 400px) {
+    .skillDiv {
+        top: 1860px;
+    }
+
+    .headlineSkillsAndText {
+        z-index: 3;
+    }
+
+    .renderSkills {
+        margin-top: 780px;
     }
 }

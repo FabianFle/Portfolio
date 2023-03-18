@@ -4,7 +4,7 @@
     width: 100vw;
     max-width: 100%;
     position: absolute;
-    top: 5820px;
+    top: 5700px;
     left: 0;
     right: 0;
     background-color: #141D2F;
@@ -36,8 +36,8 @@
 
 .footer {
     margin-top: 60px;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 120px;
+    margin-right: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,5 +111,19 @@
 
     .footerDiv{
         top: 7080px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footerDiv {
+        top: 7200px;
+    }
+
+    .footerCopyright {
+        font-size: 20px;
+    }
+
+    .footerCopyright {
+        margin-top: 10px;
     }
 }

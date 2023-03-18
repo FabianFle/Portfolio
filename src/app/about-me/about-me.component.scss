@@ -45,7 +45,7 @@
 .scrollRotate {
     z-index: 3;
     transform: rotate(90deg);
-    margin-right: 30px;
+    margin-right: 60px;
 
     span {
         color: white;
@@ -73,12 +73,12 @@
 
 .marginLeft {
     overflow: hidden;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .h1SpanDiv {
-    max-width: 510px;
-    margin-bottom: 50px;
+    max-width: 530px;
+    margin-bottom: 40px;
 }
 
 .aboutH1 {
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 470px;
+    max-width: 530px;
     margin-bottom: 25px;
 
     img {
@@ -192,7 +192,7 @@
     }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 990px) {
     .emailAbout {
         display: none;
     }
@@ -201,13 +201,19 @@
         display: none;
     }
 
+    .iconDiv {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 910px) {
     .iconAbout {
         margin-right: 5px;
     }
 }
 
 @media (max-width: 550px) {
-    .imgAndSpanDiv{
+    .imgAndSpanDiv {
         margin-right: 30px;
     }
 }
@@ -218,6 +224,10 @@
         margin-top: 130px;
         margin-right: 40px;
         width: auto;
+    }
+
+    .aboutMeSite {
+        top: 1030px;
     }
 
     .aboutSpanText {
@@ -234,6 +244,7 @@
     .shadowGraficDiv {
         z-index: 2;
         overflow: hidden;
+
         img {
             width: 300px;
             height: 600px;
@@ -259,4 +270,31 @@
             margin-right: 25px;
         }
     }
+}
+
+@media (max-width: 400px) {
+    .aboutSpanText {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .imgAndSpanDiv {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .shadowGraficDiv {
+        width: 230px;
+    }
+
+    .line1 {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .aboutH1 {
+        font-size: 48px;
+        margin-right: 0;
+    } 
 }
