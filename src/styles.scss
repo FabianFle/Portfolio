@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Poppins', 'sans-serif';
     overflow-x: hidden;
+    overflow: overlay;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -21,7 +22,7 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(0, 190, 232);
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {

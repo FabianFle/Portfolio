@@ -11,13 +11,13 @@
     <div class="headerMenuMobilDiv">
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
+        <label for="active" class="close" #closeBtn></label>
         <div class="wrapper">
             <ul>
-                <li><a href="#aboutMe">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a (click)="closeMenu()" href="#aboutMe">About me</a></li>
+                <li><a (click)="closeMenu()" href="#skills">Skills</a></li>
+                <li><a (click)="closeMenu()" href="#portfolio">Portfolio</a></li>
+                <li><a (click)="closeMenu()" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
