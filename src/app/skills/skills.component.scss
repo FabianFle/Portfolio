@@ -70,6 +70,7 @@
 
     h1 {
         color: white;
+        text-shadow: 0 0 5px white;
         font-style: normal;
         font-weight: 700;
         font-size: 100px;
@@ -101,7 +102,7 @@
 .getIntTouchBtn {
     border: none;
     background: #00BEE8;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px #00BEE8;
     border-radius: 10px;
     width: 200px;
     height: 58px;
@@ -115,6 +116,7 @@
 
     &:hover {
         background-color: #4B47FF;
+        box-shadow: 0 0 5px #4B47FF;
         transform: scale(1.2);
         cursor: pointer;
     }
@@ -133,10 +135,15 @@
 // ======== - Media - ========
 // ===========================
 
-@media (max-width: 1350px) {
+@media (max-width: 1500px) {
+    .headlineSkillsAndText {
+        top: 200px;
+    }
+
     .renderSkills {
         margin-top: 540px;
         justify-content: center;
+        max-width: none;
     }
 
     .getIntTouchBtn {
@@ -144,14 +151,6 @@
         position: absolute;
         top: 800px;
         left: calc(50% - 158px/2);
-    }
-
-    .headlineSkillsAndText {
-        top: 200px;
-    }
-
-    .renderSkills {
-        max-width: none;
     }
 }
 

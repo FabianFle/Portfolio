@@ -19,22 +19,31 @@
 }
 
 .myDiv {
-    z-index: 2;
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    display: flex;
-    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 500px;
 }
 
 .profielImg {
-    height: 805px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 3;
+    width: 600px;
     object-fit: cover;
-    overflow: hidden;
 }
 
+.myDiv img:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    object-fit: cover;
+}
+
+
 .nameRotateDiv {
-    z-index: 3;
+    z-index: 5;
     position: absolute;
     top: 250px;
     right: 100px;
@@ -47,6 +56,7 @@
 
 .rotateDiv {
     color: #FFFFFF;
+    text-shadow: 0 0 5px white;
     transform: rotate(-90deg);
 
     span {
@@ -65,6 +75,7 @@
 
 .colorWhite {
     color: white;
+    text-shadow: 0 0 5px white;
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
@@ -73,6 +84,7 @@
 
 .colorBlue {
     color: #4B47FF;
+    text-shadow: 0 0 5px #4B47FF;
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -86,40 +98,31 @@
     height: 58px;
     right: 208px;
     top: 212px;
-    background: #00BEE8;
     color: white;
+    background-color: #4B47FF;
+    box-shadow: 0 0 5px #4B47FF;
     font-size: 24px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     transition: all 125ms ease-in-out;
 
     &:hover {
         cursor: pointer;
-        background-color: #4B47FF;
+        background-color: #00BEE8;
+        box-shadow: 0 0 5px #4B47FF;
         transform: scale(1.2);
     }
 }
 
+.vectorGraffic {
+    position: relative;
+}
+
 .designElement {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
-    height: 1104.6px;
-    top: 390px;
+    top: 140px;
+    height: 500px;
     width: 100%;
-}
-
-.dBlueGraffic {
-    z-index: 1;
-    position: absolute;
-    top: 150px;
-    left: 0;
-}
-
-.lBlueGraffic {
-    z-index: 1;
-    position: absolute;
-    top: 150px;
-    left: 100px;
 }
 
 // ===========================
@@ -144,7 +147,7 @@
 
 @media (max-width: 1350px) {
     .backgroundFullSite {
-        height: 670vh;
+        height: 690vh;
     }
 }
 
@@ -183,16 +186,15 @@
             font-size: 42px;
         }
     }
-
-    .myDiv {
-        top: 190px;
-        left: 75px;
-    }
 }
 
 @media (max-width: 1090px) {
     .nameRotateDiv {
         right: 5%;
+    }
+
+    .blueStartDesign {
+        width: 100%;
     }
 }
 
@@ -215,8 +217,7 @@
         right: 0;
         left: 0;
         justify-content: center;
-        top: 655px;
-        z-index: 3;
+        top: 760px;
     }
 
     .letsTalkBtn {
@@ -224,37 +225,28 @@
         top: 200px;
     }
 
-    .myDiv {
-        top: 110px;
-        left: 25%;
-    }
-
-    .lBlueGraffic {
-        left: 320px;
-        top: 80px;
-
-        img {
-            height: 400px;
-            width: 400px;
-        }
-    }
-
     .designElement {
-        height: 700px;
-        top: 367px;
+        height: 570px;
+        top: 0;
+    }
+
+    .profielImg {
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     .colorWhite {
-        font-size: 90px;
+        font-size: 70px;
     }
 
     .colorBlue {
-        font-size: 61px;
+        font-size: 48px;
     }
 
     .rotateDiv {
         span {
-            font-size: 66px;
+            font-size: 50px;
         }
     }
 }
@@ -275,22 +267,7 @@
     }
 }
 
-@media (max-width: 750px) {
-    .lBlueGraffic {
-        left: 270px;
-        top: 80px;
-
-        img {
-            height: 350px;
-            width: 350px;
-        }
-    }
-}
-
 @media (max-width: 660px) {
-    .myDiv {
-        left: 10%;
-    }
 
     .colorWhite {
         font-size: 55px;
@@ -310,24 +287,26 @@
         top: 140px;
     }
 
-    .lBlueGraffic {
-        right: 0px;
-        top: 80px;
-        overflow: hidden;
-
-        img {
-            height: 500px;
-        }
+    .profielImg {
+        top: 0;
+        width: auto;
+        max-width: 100%;
     }
-}
 
-@media (max-width: 540px) {
+    .myDiv {
+        top: 140px;
+    }
 
-    .dBlueGraffic {
-        img {
-            width: 260px;
-            height: 600px;
-        }
+    .BackgroundDesignElement {
+        z-index: 3;
+        position: absolute;
+        top: 1030px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 400px;
+        max-width: 100%;
+        background: rgb(20, 29, 47);
     }
 }
 
@@ -335,23 +314,7 @@
 
     .designElement {
         height: 412px;
-        top: 462px;
-    }
-
-    .BackgroundDesignElement {
-        z-index: 2;
-        position: absolute;
-        top: 760px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        height: 200px;
-        max-width: 100%;
-        background: rgb(20, 29, 47);
-    }
-
-    .myDiv {
-        left: 2%;
+        top: 0;
     }
 
     .colorWhite {
@@ -371,17 +334,20 @@
     .letsTalkBtn {
         top: 130px;
     }
+
+    .BackgroundDesignElement {
+        top: 910px;
+    }
+
+    .nameRotateDiv {
+        top: 685px;
+    }
 }
 
 @media (max-width: 430px) {
 
     .designElement {
         height: 300px;
-        top: 530px;
-    }
-
-    .myDiv {
-        left: 0;
     }
 
     .profielImg {
@@ -409,27 +375,12 @@
     .nameRotateDiv {
         top: 675px;
     }
+
+    .BackgroundDesignElement {
+        top: 790px;
+    }
 }
 
 @media (max-width: 400px) {
-    .profielImg {
-        height: 550px;
-    }
-
-    .colorWhite {
-        font-size: 30px;
-    }
-
-    .colorBlue {
-        font-size: 20px;
-    }
-
-    .colorBlue {
-        top: 100px;
-    }
-
-    .letsTalkBtn {
-        width: 140px;
-        height: 50px;
-    }
+    
 }
