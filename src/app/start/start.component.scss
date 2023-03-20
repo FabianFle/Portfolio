@@ -31,6 +31,7 @@
     z-index: 3;
     width: 600px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .myDiv img:last-child {
@@ -249,6 +250,10 @@
             font-size: 50px;
         }
     }
+
+    .backgroundFullSite {
+        height: 780vh;
+    }
 }
 
 @media (max-width: 840px) {
@@ -382,5 +387,7 @@
 }
 
 @media (max-width: 400px) {
-    
+    .backgroundFullSite {
+        height: 1180vh;
+    }
 }
