@@ -1,3 +1,15 @@
+.backgroundContact {
+    width: 100vw;
+    max-width: 100%;
+    height: 120vh;
+    position: absolute;
+    top: 4600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(20, 29, 47);
+}
+
 .contactDiv {
     z-index: 2;
     position: absolute;
@@ -281,7 +293,7 @@
     }
 
     .backgroundContact {
-        height: 130vh;
+        height: 170vh;
     }
 }
 
@@ -291,7 +303,7 @@
     }
 
     .backgroundContact {
-        height: 240vh;
+        height: 260vh;
     }
 
     .goUp {
@@ -369,11 +381,19 @@
         top: 7020px;
         right: 40px;
     }
+
+    .backgroundContact {
+        height: 270vh;
+    }
 }
 
 @media (max-width: 400px) {
     .contactDiv {
-        top: 6150px;
+        top: 5820px;
+    }
+
+    .goUp {
+        top: 6760px;
     }
 
     .contactHeadlin {
@@ -402,5 +422,9 @@
 
     .goUp {
         top: 7110px;
+    }
+
+    .backgroundContact {
+        height: 280vh;
     }
 }

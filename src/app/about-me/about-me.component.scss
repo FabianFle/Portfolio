@@ -1,3 +1,15 @@
+.backgroundAbout {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(20, 29, 47);
+}
+
 .iconScrollDiv {
     z-index: 5;
     position: absolute;
@@ -236,12 +248,8 @@
         display: none;
     }
 
-    .iconDiv {
-        margin-top: 120px;
-    }
-
     .iconScrollDiv {
-        top: 910px;
+        top: 1075px;
     }
 }
 
@@ -294,6 +302,7 @@
     .backgroundAbout {
         z-index: 1;
         top: 725px;
+        height: 140vh;
     }
 }
 

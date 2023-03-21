@@ -7,6 +7,7 @@
     top: 5700px;
     left: 0;
     right: 0;
+    bottom: 0;
     background-color: #141D2F;
     border-top: 4px solid #00BEE8;
 }
@@ -116,7 +117,7 @@
 
 @media (max-width: 400px) {
     .footerDiv {
-        top: 7200px;
+        top: 6850px;
     }
 
     .footerCopyright {
