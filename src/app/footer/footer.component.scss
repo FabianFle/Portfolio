@@ -1,13 +1,9 @@
 .footerDiv {
+    position: absolute;
+    bottom: 0;
     z-index: 10;
-    height: 300px;
     width: 100vw;
     max-width: 100%;
-    position: absolute;
-    top: 5700px;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: #141D2F;
     border-top: 4px solid #00BEE8;
 }
@@ -70,12 +66,6 @@
 // ======== - Media - ========
 // ===========================
 
-@media (max-width: 1350px) {
-    .footerDiv {
-        top: 6160px;
-    }
-}
-
 @media (max-width: 1160px) {
     .footer {
         flex-direction: column;
@@ -87,6 +77,7 @@
 
     .footerLogo {
         margin-bottom: 50px;
+
         img {
             margin-top: 40px;
         }
@@ -97,28 +88,19 @@
     }
 }
 
-@media (max-width: 1030px) {
-    .footerDiv {
-        top: 6970px;
-    }
-}
 
 @media (max-width: 600px) {
     .footer {
-        top: 6970px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .footerDiv{
+    .footerDiv {
         top: 7080px;
     }
 }
 
 @media (max-width: 400px) {
-    .footerDiv {
-        top: 6850px;
-    }
 
     .footerCopyright {
         font-size: 20px;
