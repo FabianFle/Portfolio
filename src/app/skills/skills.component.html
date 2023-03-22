@@ -1,27 +1,28 @@
-<div class="skillDiv" id="skills">
-    <div class="renderSkills">
-        <div *ngFor="let skill of skills; let i = index" class="imgAndSpan">
-            <div data-aos="zoom-in-up" class="imgAndSpanDiv">
-                <img class="skillImg" src="assets/img/Icon/{{skill.img}}">
-                <span class="skillName">{{skill.name}}</span>
+<div class="skillsHauptDiv">
+    <div class="skillDiv" id="skills">
+        <div class="renderSkills">
+            <div *ngFor="let skill of skills; let i = index" class="imgAndSpan">
+                <div data-aos="zoom-in-up" class="imgAndSpanDiv">
+                    <img class="skillImg" src="assets/img/Icon/{{skill.img}}">
+                    <span class="skillName">{{skill.name}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="headlineSkillsAndText" data-aos="zoom-in-up">
+            <div class="headlineAndimg">
+                <h1>My skills</h1>
+                <img src="assets/img/Vector 1.png">
+            </div>
+            <div class="spanAndBtn">
+                <span class="spanText">I have grown my frontend developments skills that have allowed me to create
+                    different
+                    real
+                    projects.</span>
+                <a href="#contact"><button class="getIntTouchBtn">Get in touch</button></a>
             </div>
         </div>
     </div>
-    <div class="headlineSkillsAndText" data-aos="zoom-in-up">
-        <div class="headlineAndimg">
-            <h1>My skills</h1>
-            <img src="assets/img/Vector 1.png">
-        </div>
-        <div class="spanAndBtn">
-            <span class="spanText">I have grown my frontend developments skills that have allowed me to create different
-                real
-                projects.</span>
-            <a href="#contact"><button class="getIntTouchBtn">Get in touch</button></a>
-        </div>
+    <div class="lBlueGrafic">
+        <img src="assets/img/L. blue 1.png">
     </div>
 </div>
-<div class="lBlueGrafic">
-    <img src="assets/img/L. blue 1.png">
-</div>
-
-<div class="backgroundSkill"></div>

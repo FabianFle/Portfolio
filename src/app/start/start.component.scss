@@ -1,25 +1,24 @@
 .backgroundStart {
-    width: 100vw;
-    max-width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: rgb(20, 29, 47);
 }
 
+:host {
+    display: block;
+}
 
 .startDiv {
-    height: 100vh;
     width: 100vw;
     max-width: 100%;
+}
+
+.startHauptDiv {
+    display: block;
     background-color: rgb(20, 29, 47);
+    height: 100vh;
 }
 
 .myDiv {
-    position: relative;
     width: 100%;
     height: 500px;
 }

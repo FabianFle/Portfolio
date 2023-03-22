@@ -1,13 +1,7 @@
-.backgroundSkill {
-    width: 100vw;
-    max-width: 100%;
+.skillsHauptDiv {
+    display: block;
     height: 100vh;
-    position: absolute;
-    top: 1920px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(20, 29, 47);
+    background-color: rgb(20, 29, 47);
 }
 
 .skillDiv {

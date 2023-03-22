@@ -1,25 +1,7 @@
-.backgroundPortfolio {
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 2840px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(20, 29, 47);
-}
-
-.backgroundPortfolio2 {
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 3700px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(20, 29, 47);
+.portfolioHauptDiv {
+    display: block;
+    background-color: rgb(20, 29, 47);
+    height: 200vh;
 }
 
 .portfolie {
@@ -149,9 +131,7 @@
 
 .projektDivPosition {
     z-index: 5;
-    height: 100vh;
     width: 100vw;
-    max-width: 100%;
     position: absolute;
     top: 3050px;
 }

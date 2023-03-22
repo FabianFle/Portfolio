@@ -1,22 +1,13 @@
-.backgroundAbout {
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 1000px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.aboutHauptDiv {
+    display: block;
     background: rgb(20, 29, 47);
+    height: 100vh;
 }
 
 .iconScrollDiv {
     z-index: 5;
     position: absolute;
     top: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .iconDiv {
