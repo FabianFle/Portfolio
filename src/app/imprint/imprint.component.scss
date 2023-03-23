@@ -4,7 +4,6 @@
     color: white;
     font-size: calc(18px + 0.390625vw);
     text-align: center;
-    height: 380vh;
 
     a {
         text-decoration: none;
@@ -19,5 +18,19 @@
         font-size: calc(16px + 0.390625vw);
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    @media(max-width: 1480px) {}
+}
+
+.dataProtection {
+    padding: 10vh 13vh 10vh 11vh;
+    background-color: #141D2F;
+    color: white;
+    font-size: calc(18px + 0.390625vw);
+    text-align: center;
+
+    @media(max-width: 760px) {
+        padding: 10vh 2vh 10vh 2vh;
     }
 }

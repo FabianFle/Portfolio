@@ -1,6 +1,6 @@
 .contactHauptDiv {
     display: block;
-    height: 100vh;
+    height: 90vh;
     background: rgb(20, 29, 47);
 }
 
@@ -154,7 +154,7 @@
     width: 39px;
     height: 39px;
     right: 100px;
-    top: 5300px;
+    top: 5370px;
     border-radius: 41px;
 }
 
@@ -266,6 +266,10 @@
         top: 4850px;
     }
 
+    .contactHauptDiv {
+        height: 155vh;
+    }
+
     .goUp {
         top: 5690px;
     }
@@ -304,6 +308,14 @@
     .goUp {
         top: 6900px;
     }
+
+    .contactHauptDiv {
+        height: 255vh;
+    }
+
+    .purpleShadowEffect {
+        top: 5775px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -340,7 +352,7 @@
 
 @media (max-width: 600px) {
     .purpleShadowEffect {
-        top: 5050px;
+        top: 5910px;
 
         img {
             width: 380px;
@@ -373,8 +385,7 @@
     }
 
     .goUp {
-        top: 7020px;
-        right: 40px;
+        display: none;
     }
 
     .backgroundContact {
@@ -385,10 +396,6 @@
 @media (max-width: 400px) {
     .contactDiv {
         top: 5820px;
-    }
-
-    .goUp {
-        top: 6760px;
     }
 
     .contactHeadlin {
@@ -421,5 +428,9 @@
 
     .backgroundContact {
         height: 280vh;
+    }
+
+    .contactHauptDiv {
+        height: 230vh;
     }
 }

@@ -30,7 +30,15 @@
     z-index: 3;
     width: 600px;
     object-fit: cover;
-    overflow: hidden;
+}
+
+.profielImg1 {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 5;
+    width: 600px;
+    object-fit: cover;
 }
 
 .myDiv img:last-child {
@@ -236,6 +244,12 @@
         margin: auto;
     }
 
+    .profielImg1 {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     .colorWhite {
         font-size: 70px;
     }
@@ -292,7 +306,13 @@
     }
 
     .profielImg {
-        top: 0;
+        top: 100px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .profielImg1 {
+        top: 100px;
         width: auto;
         max-width: 100%;
     }
@@ -355,6 +375,10 @@
     }
 
     .profielImg {
+        height: 740px;
+    }
+
+    .profielImg1 {
         height: 740px;
     }
 
