@@ -1,0 +1,72 @@
+.nameRotateDiv {
+    z-index: 5;
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rotateDiv {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px white;
+    transform: rotate(-90deg);
+
+    span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 120%;
+    }
+}
+
+.rightDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colorWhite {
+    color: white;
+    text-shadow: 0 0 5px white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+}
+
+.colorBlue {
+    color: #4B47FF;
+    text-shadow: 0 0 5px #4B47FF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+}
+
+.letsTalkBtn {
+    border: none;
+    position: absolute;
+    width: 165px;
+    height: 58px;
+    right: 208px;
+    top: 212px;
+    color: white;
+    background-color: #4B47FF;
+    box-shadow: 0 0 5px #4B47FF;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #00BEE8;
+        box-shadow: 0 0 5px #4B47FF;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 1280px) {
+
+}

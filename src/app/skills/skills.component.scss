@@ -192,7 +192,7 @@
 
 @media (max-width: 660px) {
     .renderSkills {
-        margin-left: 60px;
+        margin-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -252,45 +252,5 @@
         h1 {
             font-size: 60px;
         }
-    }
-}
-
-@media (max-width: 400px) {
-    .spanText {
-        margin-right: 50px;
-        margin-left: 35px;
-    }
-
-    .headlineAndimg {
-        h1 {
-            font-size: 40px;
-            margin-right: 10px;
-        }
-
-        img {
-            width: 35px;
-        }
-    }
-
-    .headlineSkillsAndText {
-        top: 375px;
-    }
-
-    .getIntTouchBtn {
-        top: 760px;
-    }
-}
-
-@media (max-width: 400px) {
-    .skillDiv {
-        top: 1860px;
-    }
-
-    .headlineSkillsAndText {
-        z-index: 3;
-    }
-
-    .renderSkills {
-        margin-top: 780px;
     }
 }

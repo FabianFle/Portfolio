@@ -295,6 +295,10 @@
         top: 725px;
         height: 140vh;
     }
+
+    .iconScrollDiv {
+        top: 990px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -307,32 +311,5 @@
         img {
             margin-right: 25px;
         }
-    }
-}
-
-@media (max-width: 400px) {
-    .aboutSpanText {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .imgAndSpanDiv {
-        margin-right: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    .shadowGraficDiv {
-        width: 230px;
-    }
-
-    .line1 {
-        width: 50px;
-        margin-right: 10px;
-    }
-
-    .aboutH1 {
-        font-size: 48px;
-        margin-right: 0;
     }
 }
