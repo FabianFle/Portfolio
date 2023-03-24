@@ -343,6 +343,16 @@
     }
 }
 
+@media (max-width: 690px) {
+    .portfolie {
+        top: 2500px;
+    }
+
+    .projektDivPosition {
+        top: 3030px;
+    }
+}
+
 @media (max-width: 660px) {
     .projektInfo1Div {
         margin-left: 10px;
@@ -383,8 +393,8 @@
         top: 3700px;
 
         img {
-            width: 400px;
-            height: 600px;
+            width: 200px;
+            height: 500px;
         }
     }
 
@@ -412,4 +422,24 @@
     .frameImg {
         width: 300px;
     }
+
+    .projektDivPosition {
+        top: 3120px;
+    }
+
+    .portfolie {
+        top: 2630px;
+    }
 }
+
+@media (max-width: 420px) {
+    .portfolie {
+        top: 2440px;
+    }
+
+    .projektDivPosition {
+        top: 3010px;
+    }
+}
+
+@media (max-width: 400px) {}

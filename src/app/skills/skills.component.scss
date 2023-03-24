@@ -21,9 +21,10 @@
 .renderSkills {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
     margin-left: 100px;
-    margin-top: 175px;
+    margin-right: 100px;
+    position: absolute;
+    top: 530px;
 }
 
 .headlineSkillsAndText {
@@ -38,8 +39,7 @@
 .imgAndSpan {
     width: 100px;
     height: 100px;
-    margin-right: 120px;
-    margin-bottom: 80px;
+    margin: 50px;
     transition: all 125ms ease-in-out;
 
     &:hover {
@@ -147,7 +147,6 @@
     }
 
     .renderSkills {
-        margin-top: 540px;
         justify-content: center;
         max-width: none;
     }
@@ -160,16 +159,14 @@
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
     .renderSkills {
-        margin-top: 640px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 @media (max-width: 860px) {
-    .renderSkills {
-        margin-top: 540px;
-    }
 
     .getIntTouchBtn {
         z-index: 2;
@@ -180,19 +177,20 @@
         top: 200px;
     }
 
-    .renderSkills {
-        max-width: none;
-    }
-
     .imgAndSpan {
         margin-right: 30px;
         margin-bottom: 40px;
     }
 }
 
+@media (max-width: 720px) {
+    .imgAndSpan {
+        margin: 20px;
+    }
+}
+
 @media (max-width: 660px) {
     .renderSkills {
-        margin-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -235,14 +233,26 @@
     }
 
     .renderSkills {
-        margin-left: 0;
+        top: 600px;
+    }
+}
+
+@media (max-width: 420px) {
+    .skillImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .imgAndSpan {
+        height: 70px;
+    }
+
+    .imgAndSpan {
+        margin: 10px;
     }
 }
 
 @media (max-width: 435px) {
-    .renderSkills {
-        margin-top: 680px;
-    }
 
     .getIntTouchBtn {
         top: 830px;
@@ -252,5 +262,30 @@
         h1 {
             font-size: 60px;
         }
+    }
+
+    .lBlueGrafic {
+        img {
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .headlineSkillsAndText {
+        top: 340px;
+    }
+
+    .headlineAndimg {
+        font-size: 38px;
+        margin-bottom: 0px;
+    }
+
+    .skillDiv {
+        top: 1460px;
+    }
+
+    .renderSkills {
+        top: 650px;
     }
 }

@@ -5,7 +5,7 @@
 }
 
 .iconScrollDiv {
-    z-index: 5;
+    z-index: 6;
     position: absolute;
     top: 1000px;
 }
@@ -311,5 +311,45 @@
         img {
             margin-right: 25px;
         }
+    }
+
+    .line1 {
+        width: 50px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .iconScrollDiv {
+        top: 850px;
+    }
+
+    .aboutMeSite {
+        top: 815px;
+    }
+
+    .aboutH1 {
+        font-size: 43px;
+    }
+
+    .aboutSpanText {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .imgAndSpanDiv {
+        margin-right: 0px;
+    }
+
+    .imgAndSpan {
+        margin-right: 0;
+        margin: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .h1SpanDiv {
+        margin-bottom: 0px;
     }
 }

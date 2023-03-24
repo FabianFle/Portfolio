@@ -348,20 +348,38 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .contactHauptDiv {
+        height: 245vh;
+    }
+}
+
+@media (max-width: 690px) {
+    .contactDiv {
+        top: 5680px;
+    }
+
+    .goUp  {
+        top: 6720px;
+    }
+
+    .contactHauptDiv {
+        height: 233vh;
+    }
+
+    .purpleShadowEffect {
+        top: 5510px;
+    }
 }
 
 @media (max-width: 600px) {
     .purpleShadowEffect {
-        top: 5910px;
+        top: 5600px;
 
         img {
-            width: 380px;
+            width: 280px;
             height: 590px;
         }
-    }
-
-    .contactDiv {
-        top: 5950px;
     }
 
     .contactHeadlin {
@@ -391,5 +409,23 @@
 
     .backgroundContact {
         height: 270vh;
+    }
+
+    .contactHauptDiv {
+        height: 215vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .contactDiv {
+        top: 5770px;
+    }
+
+    .purpleShadowEffect {
+        top: 5710px;
+    }
+
+    .contactHauptDiv {
+        height: 230vh;
     }
 }
