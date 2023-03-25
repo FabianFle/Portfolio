@@ -198,7 +198,7 @@
     }
 
     .shadowGraficDiv {
-        top: 910px;
+        top: 0px;
         right: 0;
     }
 }
@@ -241,7 +241,11 @@
     }
 
     .iconScrollDiv {
-        top: 1075px;
+        top: 130px;
+    }
+
+    .iconScrollDiv {
+        top: 130px;
     }
 }
 
@@ -266,7 +270,7 @@
     }
 
     .aboutMeSite {
-        top: 1030px;
+        top: 100px;
     }
 
     .aboutSpanText {
@@ -298,7 +302,11 @@
     }
 
     .iconScrollDiv {
-        top: 990px;
+        top: 25px;
+    }
+
+    .aboutMeSite {
+        top: 0;
     }
 }
 
@@ -323,11 +331,7 @@
 @media (max-width: 400px) {
 
     .iconScrollDiv {
-        top: 850px;
-    }
-
-    .aboutMeSite {
-        top: 815px;
+        top: 0px;
     }
 
     .aboutH1 {

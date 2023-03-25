@@ -25,16 +25,16 @@
 }
 
 .projektInfo1Div {
-    overflow: hidden;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .projektInfo2Div {
-    overflow: hidden;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
@@ -81,10 +81,7 @@
 
 .projektText {
     color: white;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 120%;
     margin-bottom: 50px;
     max-width: 400px;
     text-align: end;
@@ -92,20 +89,15 @@
 
 .projektText1 {
     color: white;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 120%;
     margin-bottom: 50px;
     max-width: 400px;
     text-align: start;
 }
 
 .headlineName {
-    font-style: normal;
     font-weight: 700;
     font-size: 90px;
-    line-height: 120%;
     color: white;
     text-shadow: 0 0 5px white;
     margin: 50px;
@@ -124,7 +116,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 500px;
 }
 
 .projektDivPosition {
@@ -135,17 +126,13 @@
 }
 
 .lineLong {
-    width: 550px;
+    width: 120px;
     height: 4px;
 }
 
 .spanText {
     color: white;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 120%;
-    margin-right: 460px;
 }
 
 .liveTestBtn {
@@ -200,14 +187,14 @@
 .dBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 100px;
+    top: 470px;
     overflow: hidden;
 }
 
 .lBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 100px;
+    top: 710px;
     right: 0;
     overflow: hidden;
 }
@@ -217,51 +204,13 @@
 // ======== - Media - ========
 // ===========================
 
-@media (max-width: 1350px) {
-    .portfolie {
-        top: 2670px;
-    }
-
-    .headlineDiv {
-        position: absolute;
-        top: 140px;
-        right: 0;
+@media (max-width: 1200px) {
+    .portfolioHauptDiv {
+        padding-top: 200px;
     }
 
     .projektDivPosition {
-        top: 3150px;
-    }
-
-    .spanText {
-        max-width: 400px;
-        margin-top: 380px;
-        text-align: center;
-    }
-
-    .dBlue2Graffic {
-        top: 3300px;
-    }
-}
-
-@media (max-width: 1165px) {
-    .headlineDiv {
-        margin-top: 85px;
-    }
-
-    .headlineName {
-        font-size: 70px;
-    }
-
-    .lineLong {
-        width: 310px;
-    }
-
-    .projektDivPosition {
-        top: 3200px;
-    }
-
-    .spanText {
-        margin-right: 310px;
+        top: 500px;
     }
 }
 
@@ -272,6 +221,11 @@
 }
 
 @media (max-width: 1030px) {
+
+    .portfolioHauptDiv {
+        height: 290vh;
+    }
+
     .projektInfo1Div {
         flex-direction: column-reverse;
         align-items: center;
@@ -280,6 +234,15 @@
     .projektInfo2Div {
         flex-direction: column;
         align-items: center;
+    }
+
+    .projektText {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .projektDiv {
+        padding-bottom: 80px;
     }
 
     .projektInfos {
@@ -293,26 +256,21 @@
     }
 
     .dBlue2Graffic {
-        top: 3500px;
 
         img {
             width: 500px;
             height: 790px;
         }
     }
+
+    .programmingLanguageSpan {
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 910px) {
-    .lineLong {
-        width: 250px;
-    }
-
-    .spanText {
-        margin-right: 245px;
-    }
 
     .dBlue2Graffic {
-        top: 3600px;
 
         img {
             width: 550px;
@@ -323,16 +281,7 @@
 
 @media (max-width: 780px) {
 
-    .lineLong {
-        width: 100px;
-    }
-
-    .spanText {
-        margin-right: 100px;
-    }
-
     .dBlue2Graffic {
-        top: 3700px;
 
         img {
             width: 500px;
@@ -341,13 +290,24 @@
     }
 }
 
-@media (max-width: 690px) {
-    .portfolie {
-        top: 2500px;
+@media (max-width: 720px) {
+    .headlineName {
+        font-size: 70px;
+        margin: 20px;
     }
 
-    .projektDivPosition {
-        top: 3030px;
+    .spanText {
+        word-wrap: break-word;
+    }
+
+    .spanTextDiv {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .headlineAndLine {
+        align-items: flex-end;
     }
 }
 
@@ -365,17 +325,8 @@
 
 @media (max-width: 630px) {
 
-    .smallLine {
-        width: 50px;
-        height: 4px;
-    }
-
     .headlineName {
         margin: 10px;
-    }
-
-    .spanText {
-        margin-right: 55px;
     }
 
     .projektText {
@@ -388,7 +339,6 @@
 
 @media (max-width: 550px) {
     .dBlue2Graffic {
-        top: 3700px;
 
         img {
             width: 200px;
@@ -404,40 +354,60 @@
         margin-top: 150px;
     }
 
-    .lineLong {
-        width: 30px;
-    }
-
     .headlineName {
         font-size: 60px;
-    }
-
-    .spanText {
-        margin-top: 420px;
-        margin-right: 5px;
     }
 
     .frameImg {
         width: 300px;
     }
 
-    .projektDivPosition {
-        top: 3120px;
-    }
-
     .portfolie {
-        top: 2630px;
-    }
-}
-
-@media (max-width: 420px) {
-    .portfolie {
-        top: 2440px;
+        top: 0;
     }
 
     .projektDivPosition {
-        top: 3010px;
+        top: 390px;
     }
 }
 
-@media (max-width: 400px) {}
+@media (max-width: 510px) {
+    .headlineName {
+        font-size: 50px;
+    }
+
+    .smallLine {
+        width: 50px;
+        height: 4px;
+    }
+
+    .lineLong {
+        width: 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .projektInfos {
+        h2 {
+            margin: 10px;
+        }
+    }
+
+    .githubBtn {
+        width: 100px;
+        height: 50px;
+    }
+
+    .liveTestBtn {
+        width: 100px;
+        height: 50px;
+    }
+
+    .projektDiv {
+        padding-bottom: 0;
+    }
+
+    .portfolioHauptDiv {
+        height: 255vh;
+    }
+}

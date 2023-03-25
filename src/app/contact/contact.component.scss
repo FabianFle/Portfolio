@@ -262,170 +262,98 @@
 // ===========================
 
 @media (max-width: 1350px) {
-    .contactDiv {
-        top: 4850px;
-    }
 
-    .contactHauptDiv {
-        height: 155vh;
-    }
+    .formInput {
+        input {
+            width: 340px;
+        }
 
-    .goUp {
-        top: 5690px;
+        textarea {
+            width: 340px;
+        }
     }
+}
+
+@media (max-width: 1080px) {
 
     .contactInfosAndInputs {
         flex-direction: column;
         align-items: center;
     }
 
-    .formInput {
-        margin-top: 100px;
+    .margin-top {
+        margin-top: 20px;
     }
 
-    .contactDiv {
-        height: 140vh;
+    .margin-bottom {
+        margin-bottom: 0;
     }
 
-    .goUp {
-        top: 6000px;
-    }
-
-    .backgroundContact {
-        height: 170vh;
-    }
-}
-
-@media (max-width: 1030px) {
-    .contactDiv {
-        top: 5800px;
-    }
-
-    .backgroundContact {
-        height: 260vh;
-    }
-
-    .goUp {
-        top: 6900px;
-    }
-
-    .contactHauptDiv {
-        height: 255vh;
-    }
-
-    .purpleShadowEffect {
-        top: 5670px;
-    }
-}
-
-@media (max-width: 700px) {
     .contactHeadlin {
         h1 {
-            font-size: 70px;
-            margin-left: 20px;
-        }
-
-        img {
-            width: 70px;
+            margin: 20px;
         }
     }
 
     .formInput {
+        margin-top: 40px;
+
         input {
-            width: 340px;
+            height: 20px;
         }
 
         textarea {
-            width: 340px;
+            height: 100px;
         }
-    }
-
-    .goUp {
-        top: 6850px;
-    }
-
-    .contactInfosAndInputs {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .contactHauptDiv {
-        height: 245vh;
     }
 }
 
-@media (max-width: 690px) {
-    .contactDiv {
-        top: 5680px;
-    }
+@media (max-width: 680px) {
 
-    .goUp  {
-        top: 6720px;
-    }
-
-    .contactHauptDiv {
-        height: 233vh;
-    }
-
-    .purpleShadowEffect {
-        top: 5510px;
+    .contactInfosAndInputs {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 @media (max-width: 600px) {
-    .purpleShadowEffect {
-        top: 5600px;
 
-        img {
-            width: 280px;
-            height: 590px;
-        }
+    .goUp {
+        right: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .goUp {
+        right: 40px;
     }
 
     .contactHeadlin {
         h1 {
+            margin: 10px;
             font-size: 60px;
         }
+    }
+
+    .headInfosSpan {
+        font-size: 25px;
     }
 
     .contactInfos {
         text-align: center;
     }
-
-    .formInput {
-        input {
-            width: 260px;
-        }
-
-        textarea {
-            width: 260px;
-            height: 120px;
-        }
-    }
-
-    .goUp {
-        display: none;
-    }
-
-    .backgroundContact {
-        height: 270vh;
-    }
-
-    .contactHauptDiv {
-        height: 215vh;
-    }
 }
 
 @media (max-width: 400px) {
-    .contactDiv {
-        top: 5770px;
-    }
+    .formInput {
 
-    .purpleShadowEffect {
-        top: 5710px;
-    }
+        input {
+            width: 250px;
+        }
 
-    .contactHauptDiv {
-        height: 230vh;
+        textarea {
+            width: 250px;
+        }
     }
 }

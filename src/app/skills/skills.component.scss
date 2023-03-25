@@ -8,7 +8,7 @@
 .skillDiv {
     z-index: 3;
     position: absolute;
-    top: 50px;
+    top: 0;
     left: 0;
     right: 0;
     width: 100vw;
@@ -26,12 +26,10 @@
 }
 
 .headlineSkillsAndText {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
-    padding-bottom: 20px;
 }
 
 .imgAndSpan {
@@ -110,10 +108,7 @@
     border-radius: 10px;
     width: 200px;
     height: 58px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 23px;
-    line-height: 120%;
     color: white;
     margin-top: 50px;
     transition: all 125ms ease-in-out;
@@ -140,20 +135,34 @@
 // ===========================
 
 @media (max-width: 1500px) {
-    .headlineSkillsAndText {
-        top: 200px;
-    }
 
     .renderSkills {
+        position: absolute;
+        top: 300px;
         justify-content: center;
         max-width: none;
     }
 
     .getIntTouchBtn {
-        z-index: 2;
+        z-index: 5;
         position: absolute;
-        top: 800px;
+        top: 100px;
         left: calc(50% - 158px/2);
+    }
+
+    .headlineSkillsAndText {
+        top: 0;
+    }
+
+    .getIntTouchBtn {
+        top: 750px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .getIntTouchBtn {
+        top: 950px;
     }
 }
 
@@ -168,11 +177,7 @@
 
     .getIntTouchBtn {
         z-index: 2;
-        top: 800px;
-    }
-
-    .headlineSkillsAndText {
-        top: 200px;
+        top: 920px;
     }
 
     .imgAndSpan {
@@ -184,6 +189,10 @@
 @media (max-width: 720px) {
     .imgAndSpan {
         margin: 20px;
+    }
+
+    .getIntTouchBtn {
+        top: 760px;
     }
 }
 
@@ -209,6 +218,13 @@
     }
 }
 
+@media (max-width: 560px) {
+
+    .getIntTouchBtn {
+        top: 890px;
+    }
+}
+
 @media (max-width: 540px) {
     .skillImg {
         width: 40px;
@@ -221,17 +237,18 @@
     }
 }
 
-@media (max-width: 500px) {
-    .headlineSkillsAndText {
-        top: 300px;
+@media (max-width: 435px) {
+
+    .headlineAndimg {
+        h1 {
+            font-size: 60px;
+        }
     }
 
-    .getIntTouchBtn {
-        top: 780px;
-    }
-
-    .renderSkills {
-        top: 600px;
+    .lBlueGrafic {
+        img {
+            width: 250px;
+        }
     }
 }
 
@@ -248,31 +265,13 @@
     .imgAndSpan {
         margin: 10px;
     }
-}
-
-@media (max-width: 435px) {
 
     .getIntTouchBtn {
-        top: 830px;
-    }
-
-    .headlineAndimg {
-        h1 {
-            font-size: 60px;
-        }
-    }
-
-    .lBlueGrafic {
-        img {
-            width: 250px;
-        }
+        top: 700px;
     }
 }
 
 @media (max-width: 400px) {
-    .headlineSkillsAndText {
-        top: 340px;
-    }
 
     .headlineAndimg {
         font-size: 38px;
@@ -280,10 +279,13 @@
     }
 
     .skillDiv {
-        top: 1460px;
+        top: 100px;
     }
+}
 
-    .renderSkills {
-        top: 650px;
+@media (max-width: 360px) {
+
+    .getIntTouchBtn {
+        top: 800px;
     }
 }
