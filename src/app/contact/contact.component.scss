@@ -1,14 +1,14 @@
 .contactHauptDiv {
+    position: relative;
     display: block;
-    height: 90vh;
+    height: 100vh;
     background: rgb(20, 29, 47);
 }
 
 .contactDiv {
     z-index: 2;
     position: absolute;
-    top: 4590px;
-    height: 100vh;
+    top: 100px;
     width: 100vw;
     max-width: 100%;
 }
@@ -154,7 +154,7 @@
     width: 39px;
     height: 39px;
     right: 100px;
-    top: 5370px;
+    top: 850px;
     border-radius: 41px;
 }
 
@@ -176,7 +176,7 @@
 .purpleShadowEffect {
     z-index: 1;
     position: absolute;
-    top: 4820px;
+    top: 100px;
     transform: rotate(180deg);
     overflow: hidden;
 }

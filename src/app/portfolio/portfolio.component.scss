@@ -1,7 +1,8 @@
 .portfolioHauptDiv {
+    position: relative;
     display: block;
     background-color: rgb(20, 29, 47);
-    height: 200vh;
+    height: 210vh;
 }
 
 .portfolie {
@@ -10,9 +11,6 @@
     width: 100vw;
     max-width: 100%;
     position: absolute;
-    top: 2650px;
-    left: 0;
-    right: 0;
 }
 
 .allProjekte {
@@ -133,7 +131,7 @@
     z-index: 5;
     width: 100vw;
     position: absolute;
-    top: 3050px;
+    top: 340px;
 }
 
 .lineLong {
@@ -202,14 +200,14 @@
 .dBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 3200px;
+    top: 100px;
     overflow: hidden;
 }
 
 .lBlue2Graffic {
     z-index: 1;
     position: absolute;
-    top: 4000px;
+    top: 100px;
     right: 0;
     overflow: hidden;
 }
