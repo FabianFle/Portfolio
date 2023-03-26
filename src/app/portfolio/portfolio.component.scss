@@ -268,6 +268,12 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .dBlue2Graffic {
+        top: 250px;
+    }
+}
+
 @media (max-width: 910px) {
 
     .dBlue2Graffic {
@@ -279,14 +285,13 @@
     }
 }
 
-
 @media (max-height: 900px) {
     .portfolie {
-        top: 130px;
+        top: 250px;
     }
 
     .projektDivPosition {
-        top: 460px;
+        top: 550px;
     }
 }
 
@@ -298,6 +303,16 @@
             width: 500px;
             height: 600px;
         }
+    }
+}
+
+@media (max-height: 740px) {
+    .portfolie {
+        top: 270px;
+    }
+
+    .projektDivPosition {
+        top: 600px;
     }
 }
 
@@ -358,6 +373,12 @@
     }
 }
 
+@media (max-width: 590px) {
+    .lBlue2Graffic {
+        top: 635px;
+    }
+}
+
 @media (max-width: 550px) {
     .dBlue2Graffic {
 
@@ -365,6 +386,10 @@
             width: 200px;
             height: 500px;
         }
+    }
+
+    .lBlue2Graffic {
+        top: 1060px;
     }
 
     .liveTestBtn {
@@ -384,7 +409,7 @@
     }
 
     .portfolie {
-        top: 0;
+        top: 50px;
     }
 
     .projektDivPosition {

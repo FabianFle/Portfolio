@@ -261,11 +261,29 @@
     }
 
     .scrollRotate {
-        top: -70px;
+        top: -130px;
     }
 
     .aboutMeSite {
         top: 210px;
+    }
+}
+
+@media (max-height: 740px) {
+    .iconScrollDiv {
+        top: 250px;
+    }
+
+    .scrollRotate {
+        top: -70px;
+    }
+
+    .aboutMeSite {
+        top: 180px;
+    }
+
+    .shadowGraficDiv {
+        top: 200px;
     }
 }
 

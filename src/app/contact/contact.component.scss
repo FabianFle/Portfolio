@@ -322,6 +322,12 @@
     }
 }
 
+@media (max-width: 820px) {
+    .purpleShadowEffect {
+        top: 0px;
+    }
+}
+
 @media (max-height: 780px) {
     .contactHauptDiv {
         height: 180vh;
@@ -333,6 +339,24 @@
 
     .goUp {
         top: 1160px;
+    }
+}
+
+@media (max-height: 740px) {
+    .contactDiv {
+        top: 680px;
+    }
+
+    .contactHauptDiv {
+        height: 200vh;
+    }
+
+    .goUp {
+        top: 1430px;
+    }
+
+    .purpleShadowEffect {
+        top: 550px;
     }
 }
 
@@ -362,6 +386,12 @@
 
     .goUp {
         right: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .purpleShadowEffect {
+        top: -70px;
     }
 }
 
