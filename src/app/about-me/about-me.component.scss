@@ -255,6 +255,26 @@
     }
 }
 
+@media (max-height: 900px) {
+    .iconScrollDiv {
+        top: 180px;
+    }
+
+    .scrollRotate {
+        top: -70px;
+    }
+
+    .aboutMeSite {
+        top: 210px;
+    }
+}
+
+@media (max-height: 680px) {
+    .scrollRotate {
+        top: 30px;
+    }
+}
+
 @media (max-width: 550px) {
     .imgAndSpanDiv {
         margin-right: 30px;
@@ -295,11 +315,6 @@
 }
 
 @media (max-width: 510px) {
-    .backgroundAbout {
-        z-index: 1;
-        top: 725px;
-        height: 140vh;
-    }
 
     .iconScrollDiv {
         top: 25px;

@@ -173,6 +173,12 @@
     }
 }
 
+@media (max-height: 900px) {
+    .skillDiv {
+        top: 130px;
+    }
+}
+
 @media (max-width: 860px) {
 
     .getIntTouchBtn {
@@ -193,6 +199,12 @@
 
     .getIntTouchBtn {
         top: 760px;
+    }
+}
+
+@media (max-height: 680px) {
+    .skillDiv {
+        top: 280px;
     }
 }
 

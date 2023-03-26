@@ -308,6 +308,48 @@
     }
 }
 
+@media (max-height: 900px) {
+    .contactHauptDiv {
+        height: 130vh;
+    }
+
+    .contactDiv {
+        top: 235px;
+    }
+
+    .goUp {
+        top: 960px;
+    }
+}
+
+@media (max-height: 780px) {
+    .contactHauptDiv {
+        height: 180vh;
+    }
+
+    .contactDiv {
+        top: 400px;
+    }
+
+    .goUp {
+        top: 1160px;
+    }
+}
+
+@media (max-height: 680px) {
+    .contactHauptDiv {
+        height: 300vh;
+    }
+
+    .contactDiv {
+        top: 960px;
+    }
+
+    .goUp {
+        top: 1710px;
+    }
+}
+
 @media (max-width: 680px) {
 
     .contactInfosAndInputs {

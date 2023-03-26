@@ -1,12 +1,3 @@
-.backgroundStart {
-    height: 100vh;
-    background: rgb(20, 29, 47);
-}
-
-:host {
-    display: block;
-}
-
 .startDiv {
     width: 100vw;
     max-width: 100%;
@@ -153,12 +144,6 @@
     }
 }
 
-@media (max-width: 1350px) {
-    .backgroundFullSite {
-        height: 690vh;
-    }
-}
-
 @media (max-width: 1245px) {
     .colorWhite {
         font-size: 60px;
@@ -212,12 +197,6 @@
     }
 }
 
-@media (max-width: 1030px) {
-    .backgroundFullSite {
-        height: 780vh;
-    }
-}
-
 @media (max-width: 990px) {
 
     .nameRotateDiv {
@@ -260,10 +239,6 @@
         span {
             font-size: 50px;
         }
-    }
-
-    .backgroundFullSite {
-        height: 780vh;
     }
 }
 
@@ -408,9 +383,6 @@
 }
 
 @media (max-width: 400px) {
-    .backgroundFullSite {
-        height: 1180vh;
-    }
 
     .blueStartDesign {
         top: 130px;
