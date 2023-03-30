@@ -1,393 +1,109 @@
-.aboutHauptDiv {
-    position: relative;
-    display: block;
-    background: rgb(20, 29, 47);
-    height: 100vh;
-}
-
-.iconScrollDiv {
-    z-index: 6;
-    position: absolute;
-    top: 100px;
-}
-
-.iconDiv {
-    display: flex;
-    flex-direction: row;
-
-    a {
-        margin-right: 20px;
-    }
-}
-
-.iconAbout {
-    width: 30px;
-    margin-right: 42px;
-    transition: all 125ms ease-in-out;
-
-    &:hover {
-        transform: scale(1.4);
-    }
-}
-
-.line1 {
-    width: 100px;
-    margin-right: 40px;
-}
-
-.emailAboutLink {
-    text-decoration: none;
-}
-
-.emailAbout {
+.aboutme-container {
     color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-}
-
-.scrollRotate {
-    position: absolute;
-    top: -200px;
-    right: 120px;
+    background-color: #141D2F;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 22vh;
-
+    justify-content: space-between;
+    padding-top: 10vh;
+  
+    @media(max-width: 1000px) {
+      flex-direction: column;
+    }
+  
+  }
+  
+  .aboutme-headline {
+    width: 40%;
+    margin-left: 15vh;
+    
+  
+    @media(max-width: 1000px) {
+      display: none;
+    }
+  
+    h1 {
+      text-align: center;
+      text-shadow: 0px 0px 6px white;
+      font-size: calc(45px + 0.390625vw);
+    }
+  
     span {
-        color: white;
-        writing-mode: vertical-rl;
-        font-size: calc(18px + 0.390625vw);
-        display: flex;
-        align-items: center;
-        z-index: 4;
+      font-size: calc(16px + 0.390625vw);
     }
-
+  }
+  
+  .aboutme-headline-mobile {
+    display: none;
+  
+    @media(max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+      text-align: center;
+  
+      h1 {
+        text-shadow: 0px 0px 6px white;
+        font-size: calc(25px + 0.390625vw);
+      }
+  
+      span {
+        font-size: calc(16px + 0.390625vw);
+      }
+    }
+  
+  
+  
+  }
+  
+  .aboutme-text {
+    display: flex;
+    justify-content: space-around;
+    font-size: calc(18px + 0.390625vw);
+    text-align: start;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  
+    @media(max-width: 1000px) {
+      font-size: calc(16px + 0.390625vw);
+    }
+  
     img {
-        position: absolute;
-        top: 180px;
-        width: 2vw;
-        height: 2vh;
-        object-fit: contain;
-        animation: scrollDown 1.5s linear infinite;
-        z-index: 4;
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      margin: 16px;
+  
+      @media(max-width: 1000px) {
+        width: 32px;
+        height: 32px;
+      }
+  
     }
-}
-
-@keyframes scrollDown {
-    0% {
-        top: 180px;
-    }
-
-    25% {
-        top: calc(180px + 5px);
-    }
-
-    50% {
-        top: 195px;
-    }
-
-    75% {
-        top: calc(195px - 5px);
-    }
-
-    100% {
-        top: 180px;
-    }
-}
-
-.aboutMeSite {
-    z-index: 5;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 100px;
-}
-
-.marginLeft {
-    overflow: hidden;
-    margin-left: 100px;
-}
-
-.h1SpanDiv {
-    max-width: 530px;
-    margin-bottom: 40px;
-}
-
-.aboutH1 {
-    color: white;
-    text-shadow: 0 0 5px white;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 120%;
-    width: 510px;
-}
-
-.imgAndSpan {
+  
+  }
+  
+  .aboutme-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 530px;
-    margin-bottom: 25px;
-
+  
+    @media(max-width: 1000px) {
+      display: none;
+    }
+  
     img {
-        margin: 30px;
-        margin-right: 60px;
-        transition: all 125ms ease-in-out;
-
-        &:hover {
-            transform: scale(1.3);
-        }
+      border: 4px solid #4B47FF;
+      border-radius: 50%;
+      height: 25vw;
+      width: 25vw;
+      margin-left: 8px;
+      object-fit: contain;
     }
-}
-
-.colorWhite {
-    color: white;
-}
-
-.roundImgSpanDiv {
-    position: absolute;
-    right: 0;
-    top: 112px;
-    display: flex;
-    align-items: center;
-}
-
-.roundImg {
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    border: 4px solid #00BEE8;
-    object-fit: cover;
-}
-
-.line7 {
-    height: 4px;
-    width: 300px;
-}
-
-.shadowGraficDiv {
-    z-index: 4;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    overflow: hidden;
-}
-
-
-// ===========================
-// ======== - Media - ========
-// ===========================
-
-@media (max-width: 1500px) {
-    .line7 {
-        width: 50px;
-    }
-}
-
-@media (max-width: 1240px) {
-    .roundImg {
-        width: 350px;
-        height: 350px;
-    }
-
-    .shadowGraficDiv {
-        top: 0px;
-        right: 0;
-    }
-}
-
-@media (max-width: 1080px) {
-    .roundImgSpanDiv {
-        display: none;
-    }
-
-    .marginLeft {
-        margin: 0;
-        width: 100vw;
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .h1SpanDiv {
-        max-width: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        span {
-            max-width: 500px;
-        }
-    }
-}
-
-@media (max-width: 990px) {
-    .emailAbout {
-        display: none;
-    }
-
-    .scrollRotate {
-        display: none;
-    }
-
-    .iconScrollDiv {
-        top: 130px;
-    }
-
-    .iconScrollDiv {
-        top: 130px;
-    }
-}
-
-@media (max-width: 910px) {
-    .iconAbout {
-        margin-right: 5px;
-    }
-}
-
-@media (max-height: 900px) {
-    .iconScrollDiv {
-        top: 180px;
-    }
-
-    .scrollRotate {
-        top: -130px;
-    }
-
-    .aboutMeSite {
-        top: 210px;
-    }
-}
-
-@media (max-height: 740px) {
-    .iconScrollDiv {
-        top: 250px;
-    }
-
-    .scrollRotate {
-        top: -70px;
-    }
-
-    .aboutMeSite {
-        top: 180px;
-    }
-
-    .shadowGraficDiv {
-        top: 200px;
-    }
-}
-
-@media (max-height: 680px) {
-    .scrollRotate {
-        top: 30px;
-    }
-}
-
-@media (max-width: 550px) {
-    .imgAndSpanDiv {
-        margin-right: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    .aboutH1 {
-        font-size: 70px;
-        margin-top: 130px;
-        margin-right: 40px;
-        width: auto;
-    }
-
-    .aboutMeSite {
-        top: 100px;
-    }
-
-    .aboutSpanText {
-        font-size: 16px;
-    }
-
-    .aboutSpanText {
-        max-width: none;
-        margin-left: 45px;
-        margin-right: 80px;
-        word-wrap: break-word;
-    }
-
-    .shadowGraficDiv {
-        overflow: hidden;
-
-        img {
-            width: 300px;
-            height: 600px;
-        }
-    }
-}
-
-@media (max-width: 510px) {
-
-    .iconScrollDiv {
-        top: 25px;
-    }
-
-    .aboutMeSite {
-        top: 0;
-    }
-}
-
-@media (max-width: 420px) {
-    .aboutH1 {
-        font-size: 52px;
-        margin-bottom: 30px;
-    }
-
-    .imgAndSpan {
-        img {
-            margin-right: 25px;
-        }
-    }
-
-    .line1 {
-        width: 50px;
-        height: 4px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .iconScrollDiv {
-        top: 0px;
-    }
-
-    .aboutH1 {
-        font-size: 43px;
-    }
-
-    .aboutSpanText {
-        margin-left: 30px;
-        margin-right: 20px;
-    }
-
-    .imgAndSpanDiv {
-        margin-right: 0px;
-    }
-
-    .imgAndSpan {
-        margin-right: 0;
-        margin: 5px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .h1SpanDiv {
-        margin-bottom: 0px;
-    }
-}
+  }
+  
+  .blue-line {
+    min-width: 25vh;
+    border-bottom: 4px solid #4B47FF;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  

@@ -1,313 +1,160 @@
-.skillsHauptDiv {
-    position: relative;
-    display: block;
-    height: 100vh;
-    background-color: rgb(20, 29, 47);
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #141D2F;
+  align-items: flex-start;
+  padding-top: 20vh;
+  position: relative;
+
+  @media(max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
 }
 
-.skillDiv {
-    z-index: 3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 15vh;
+  justify-content: center;
+
+  @media(max-width: 1000px) {
+    padding-left: 0;
+  }
 }
 
-.renderSkills {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
-    max-width: 900px;
-}
+.skills-icons-row {
+  display: flex;
+  justify-content: space-around;
 
-.headlineSkillsAndText {
-    display: flex;
+  @media(max-width: 1000px) {
     flex-direction: column;
-    position: absolute;
-    right: 0;
+  }
 }
 
-.imgAndSpan {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-    transition: all 125ms ease-in-out;
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 180px;
+  height: 180px;
+
+  img {
+    width: 8vw;
+    height: 8vh;
+    object-fit: contain;
+    margin: 16px;
 
     &:hover {
-        transform: scale(1.3);
+      cursor: pointer;
+      animation: bounce 225ms ease-in-out;
     }
+  }
+}
 
-    span {
-        margin-top: 6px;
-        text-align: center;
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-10%);
+  }
+}
+
+.skills-text {
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: calc(45px + 0.390625vw);
+    text-shadow: 0px 0px 6px white;
+
+    @media(max-width: 1000px) {
+      font-size: calc(25px + 0.390625vw);
     }
-}
+  }
 
-.imgAndSpanDiv {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+  span {
+    font-size: calc(16px + 0.390625vw);
+    text-align: center;
 
-.skillImg {
-    width: 65px;
-    height: 65px;
-}
-
-.skillName {
-    color: white;
-}
-
-.headlineAndimg {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    h1 {
-        color: white;
-        text-shadow: 0 0 5px white;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 100px;
-        line-height: 120%;
-        margin-right: 60px;
-        margin-bottom: 40px;
+    @media(max-width: 1000px) {
+      font-size: calc(16px + 0.390625vw);
     }
-
-    img {
-        width: 60px;
-        height: 4px;
-    }
+  }
 }
 
-.spanAndBtn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+.skills-headline {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 15vh;
 }
 
-.spanText {
-    color: white;
-    text-align: right;
-    margin-right: 130px;
-    max-width: 510px;
+.skills-subheadline {
+  font-size: calc(18px + 0.390625vw);
+
+  @media(max-width: 1000px) {
+    font-size: calc(16px + 0.390625vw);
+    margin: 8px;
+  }
 }
 
-.getIntTouchBtn {
-    border: none;
-    background: #00BEE8;
+.blue-line {
+  border-bottom: 4px solid #4B47FF;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  min-width: 15vh;
+}
+
+.contact-btn {
+  margin-top: 32px;
+
+  @media(max-width: 1000px) {
+    display: none;
+  }
+
+  button {
+    font-size: calc(23px + 0.390625vw);
+    background-color: #00BEE8;
     box-shadow: 0 0 5px #00BEE8;
-    border-radius: 10px;
-    width: 200px;
-    height: 58px;
-    font-size: 23px;
+    padding: 16px;
     color: white;
-    margin-top: 50px;
-    transition: all 125ms ease-in-out;
+    border: none;
+    border-radius: 10px;
+    transition: all 225ms ease-in-out;
+
 
     &:hover {
-        background-color: #4B47FF;
-        box-shadow: 0 0 5px #4B47FF;
-        transform: scale(1.2);
-        cursor: pointer;
+      cursor: pointer;
+      background-color: #4B47FF;
+      box-shadow: 0 0 5px #4B47FF;
+      transform: scale(1.1);
     }
+  }
 }
 
-.lBlueGrafic {
+
+.LBlue-shadow {
+  position: absolute;
+  top: 30%;
+
+  img {
     z-index: 2;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    overflow: hidden;
-}
-
-
-// ===========================
-// ======== - Media - ========
-// ===========================
-
-@media (max-width: 1500px) {
-
-    .renderSkills {
-        position: absolute;
-        top: 300px;
-        justify-content: center;
-        max-width: none;
-    }
-
-    .getIntTouchBtn {
-        z-index: 5;
-        position: absolute;
-        top: 100px;
-        left: calc(50% - 158px/2);
-    }
-
-    .headlineSkillsAndText {
-        top: 0;
-    }
-
-    .getIntTouchBtn {
-        top: 750px;
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    .getIntTouchBtn {
-        top: 950px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .renderSkills {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-@media (max-height: 900px) {
-    .skillDiv {
-        top: 130px;
-    }
-}
-
-@media (max-width: 860px) {
-
-    .getIntTouchBtn {
-        z-index: 2;
-        top: 920px;
-    }
-
-    .imgAndSpan {
-        margin-right: 30px;
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-height: 740px) {
-    .skillDiv {
-        top: 200px;
-    }
-
-    .lBlueGrafic {
-        top: 250px;
-    }
-}
-
-@media (max-width: 720px) {
-    .imgAndSpan {
-        margin: 20px;
-    }
-
-    .getIntTouchBtn {
-        top: 760px;
-    }
-}
-
-@media (max-height: 680px) {
-    .skillDiv {
-        top: 280px;
-    }
-}
-
-@media (max-width: 660px) {
-    .renderSkills {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .headlineAndimg {
-        h1 {
-            font-size: 70px;
-            margin-right: 20px;
-        }
-    }
-
-    .spanText {
-        margin-right: 70px;
-        margin-left: 70px;
-    }
-}
-
-@media (max-width: 560px) {
-
-    .getIntTouchBtn {
-        top: 890px;
-    }
-}
-
-@media (max-width: 540px) {
-    .skillImg {
-        width: 40px;
-        height: 40px;
-    }
-
-    .imgAndSpan {
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 435px) {
-
-    .headlineAndimg {
-        h1 {
-            font-size: 60px;
-        }
-    }
-
-    .lBlueGrafic {
-        img {
-            width: 250px;
-        }
-    }
-}
-
-@media (max-width: 420px) {
-    .skillImg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .imgAndSpan {
-        height: 70px;
-    }
-
-    .imgAndSpan {
-        margin: 10px;
-    }
-
-    .getIntTouchBtn {
-        top: 700px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .headlineAndimg {
-        font-size: 38px;
-        margin-bottom: 0px;
-    }
-
-    .skillDiv {
-        top: 100px;
-    }
-}
-
-@media (max-width: 360px) {
-
-    .getIntTouchBtn {
-        top: 800px;
-    }
+    width: 20vw;
+    height: 120vh;
+  }
 }

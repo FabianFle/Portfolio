@@ -1,459 +1,203 @@
-.portfolioHauptDiv {
-    position: relative;
-    display: block;
-    background-color: rgb(20, 29, 47);
-    height: 210vh;
+.portfolio-container {
+  background-color: #141D2F;
+  padding-top: 20vh;
+  color: white;
 }
 
-.portfolie {
-    z-index: 4;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    position: absolute;
-}
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
-.allProjekte {
-    position: absolute;
-    top: 400px;
-    left: 0;
-    right: 0;
-}
 
-.projektDiv {
-    padding-bottom: 130px;
-}
+  h1 {
+    font-size: calc(45px + 0.390625vw);
+    text-shadow: 0px 0px 6px white;
 
-.projektInfo1Div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.projektInfo2Div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.projektInfos {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-
-    h2 {
-        color: #4B47FF;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 120%;
+    @media(max-width: 1000px) {
+      font-size: calc(25px + 0.390625vw);
     }
+  }
 }
 
+.blue-line-left {
+  border-bottom: 4px solid #4B47FF;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  min-width: 30vh;
+  margin: 32px;
 
-.projektInfos1 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-
-    h2 {
-        color: #4B47FF;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 120%;
-    }
+  @media(max-width: 1000px) {
+    min-width: 10vh;
+  }
 }
 
-.programmingLanguageSpan {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 120%;
-    color: #00BEE8;
-    margin-bottom: 30px;
+.blue-line-right {
+  border-bottom: 4px solid #4B47FF;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  min-width: 30vh;
+  margin: 32px;
+
+  @media(max-width: 1000px) {
+    min-width: 10vh;
+  }
+}
+
+.portfolio-welcome {
+  font-size: calc(18px + 0.390625vw);
+  display: flex;
+  justify-content: center;
+
+  @media(max-width: 1000px) {
+    font-size: calc(16px + 0.390625vw);
     text-align: center;
+  }
 }
 
-.projektText {
-    color: white;
-    font-size: 16px;
-    margin-bottom: 50px;
-    max-width: 400px;
-    text-align: end;
-}
+.portfolio-project1 {
+  height: 50vh;
+  padding-top: 20vh;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  display: flex;
+  justify-content: space-between;
 
-.projektText1 {
-    color: white;
-    font-size: 16px;
-    margin-bottom: 50px;
-    max-width: 400px;
-    text-align: start;
-}
-
-.headlineName {
-    font-weight: 700;
-    font-size: 90px;
-    color: white;
-    text-shadow: 0 0 5px white;
-    margin: 50px;
-}
-
-.headlineDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headlineAndLine {
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media(max-width: 1000px) {
     flex-direction: column;
+    height: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
-.projektDivPosition {
-    z-index: 5;
-    width: 100vw;
-    position: absolute;
-    top: 340px;
+.portfolio-project2 {
+  height: 50vh;
+  padding-top: 20vh;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width: 1000px) {
+    flex-direction: column;
+    height: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
-.lineLong {
-    width: 120px;
-    height: 4px;
+.column-reverse {
+  @media(max-width: 1000px) {
+    flex-direction: column-reverse !important;
+  }
 }
 
-.spanText {
-    color: white;
-    font-size: 20px;
-}
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
-.liveTestBtn {
-    border: none;
-    background: #4B47FF;
-    box-shadow: 0 0 5px #4B47FF;
-    border-radius: 10px;
-    width: 152px;
-    height: 58px;
-    color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    margin-right: 100px;
-    transition: all 125ms ease-in-out;
-
-    &:hover {
-        cursor: pointer;
-        background: #00BEE8;
-        box-shadow: 0 0 5px #00BEE8;
-    }
-}
-
-.githubBtn {
-    background-color: transparent;
-    border: 2px solid #00BEE8;
-    box-shadow: 0 0 5px #00BEE8;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    color: white;
-    border-radius: 10px;
-    width: 152px;
-    height: 58px;
-    transition: all 125ms ease-in-out;
-
-    &:hover {
-        cursor: pointer;
-        background: #00BEE8;
-        box-shadow: 0 0 5px #00BEE8;
-    }
-}
-
-.frameImg {
-    width: 480px;
-    height: 250px;
+  img {
+    width: 30vw;
     object-fit: contain;
+    margin: 32px;
+
+    @media(max-width: 1000px) {
+      width: 80vw;
+    }
+  }
 }
 
-.dBlue2Graffic {
-    z-index: 1;
-    position: absolute;
-    top: 470px;
-    overflow: hidden;
+.project-description {
+  width: 50%;
+  text-align: center;
+
+  @media(max-width: 1000px) {
+    width: 100%;
+  }
+
+  h1 {
+    color: #4B47FF;
+    font-size: calc(33px + 0.390625vw);
+
+    @media(max-width: 1000px) {
+      font-size: calc(20px + 0.390625vw);
+    }
+  }
+
+  h2 {
+    color: #00BEE8;
+    font-size: calc(23px + 0.390625vw);
+
+    @media(max-width: 1000px) {
+      font-size: calc(18px + 0.390625vw);
+    }
+  }
+
+  span {
+    font-size: calc(18px + 0.390625vw);
+
+    @media(max-width: 1000px) {
+      font-size: calc(16px + 0.390625vw);
+    }
+  }
 }
 
-.lBlue2Graffic {
-    z-index: 1;
-    position: absolute;
-    top: 710px;
-    right: 0;
-    overflow: hidden;
+.projects-buttons {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+  }
 }
 
+.live-test-btn {
+  font-size: calc(23px + 0.390625vw);
+  background-color: #4B47FF;
+  box-shadow: 0 0 5px #4B47FF;
+  padding: 16px;
+  margin: 32px;
+  border-radius: 10px;
+  transition: all 225ms ease-in-out;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  display: flex;
 
-// ===========================
-// ======== - Media - ========
-// ===========================
+  @media(max-width: 1000px) {
+    font-size: calc(16px + 0.390625vw);
+  }
 
-@media (max-width: 1200px) {
-    .portfolioHauptDiv {
-        padding-top: 200px;
-    }
 
-    .projektDivPosition {
-        top: 500px;
-    }
+  &:hover {
+    cursor: pointer;
+    background-color: #00BEE8;
+  }
 }
 
-@media (max-width: 1130px) {
-    .frameImg {
-        width: 380px;
-    }
-}
+.github-btn {
+  font-size: calc(23px + 0.390625vw);
+  background-color: #141D2F;
+  border: 4px solid #00BEE8;
+  box-shadow: 0 0 5px #00BEE8;
+  padding: 16px;
+  margin: 32px;
+  border-radius: 10px;
+  transition: all 225ms ease-in-out;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  display: flex;
 
-@media (max-width: 1030px) {
+  @media(max-width: 1000px) {
+    font-size: calc(16px + 0.390625vw);
+  }
 
-    .portfolioHauptDiv {
-        height: 290vh;
-    }
-
-    .projektInfo1Div {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .projektInfo2Div {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projektText {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .projektDiv {
-        padding-bottom: 80px;
-    }
-
-    .projektInfos {
-        display: flex;
-        align-items: center;
-    }
-
-    .projektInfos1 {
-        display: flex;
-        align-items: center;
-    }
-
-    .dBlue2Graffic {
-
-        img {
-            width: 500px;
-            height: 790px;
-        }
-    }
-
-    .programmingLanguageSpan {
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .dBlue2Graffic {
-        top: 250px;
-    }
-}
-
-@media (max-width: 910px) {
-
-    .dBlue2Graffic {
-
-        img {
-            width: 550px;
-            height: 790px;
-        }
-    }
-}
-
-@media (max-height: 900px) {
-    .portfolie {
-        top: 250px;
-    }
-
-    .projektDivPosition {
-        top: 550px;
-    }
-}
-
-@media (max-width: 780px) {
-
-    .dBlue2Graffic {
-
-        img {
-            width: 500px;
-            height: 600px;
-        }
-    }
-}
-
-@media (max-height: 740px) {
-    .portfolie {
-        top: 270px;
-    }
-
-    .projektDivPosition {
-        top: 600px;
-    }
-}
-
-@media (max-width: 720px) {
-    .headlineName {
-        font-size: 70px;
-        margin: 20px;
-    }
-
-    .spanText {
-        word-wrap: break-word;
-    }
-
-    .spanTextDiv {
-        text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .headlineAndLine {
-        align-items: flex-end;
-    }
-}
-
-@media (max-height: 680px) {
-    .portfolie {
-        top: 480px;
-    }
-
-    .projektDivPosition {
-        top: 800px;
-    }
-}
-
-@media (max-width: 660px) {
-    .projektInfo1Div {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .projektInfo2Div {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 630px) {
-
-    .headlineName {
-        margin: 10px;
-    }
-
-    .projektText {
-        margin-left: 10px;
-        margin-right: 10px;
-        word-wrap: break-word;
-        text-align: center;
-    }
-}
-
-@media (max-width: 590px) {
-    .lBlue2Graffic {
-        top: 635px;
-    }
-}
-
-@media (max-width: 550px) {
-    .dBlue2Graffic {
-
-        img {
-            width: 200px;
-            height: 500px;
-        }
-    }
-
-    .lBlue2Graffic {
-        top: 1060px;
-    }
-
-    .liveTestBtn {
-        margin: 10px;
-    }
-
-    .headlineDiv {
-        margin-top: 150px;
-    }
-
-    .headlineName {
-        font-size: 60px;
-    }
-
-    .frameImg {
-        width: 300px;
-    }
-
-    .portfolie {
-        top: 50px;
-    }
-
-    .projektDivPosition {
-        top: 390px;
-    }
-}
-
-@media (max-width: 510px) {
-    .headlineName {
-        font-size: 50px;
-    }
-
-    .smallLine {
-        width: 50px;
-        height: 4px;
-    }
-
-    .lineLong {
-        width: 50px;
-    }
-}
-
-@media (max-width: 360px) {
-    .projektInfos {
-        h2 {
-            margin: 10px;
-        }
-    }
-
-    .githubBtn {
-        width: 100px;
-        height: 50px;
-    }
-
-    .liveTestBtn {
-        width: 100px;
-        height: 50px;
-    }
-
-    .projektDiv {
-        padding-bottom: 0;
-    }
-
-    .portfolioHauptDiv {
-        height: 255vh;
-    }
+  &:hover {
+    background-color: #00BEE8;
+    cursor: pointer;
+  }
 }

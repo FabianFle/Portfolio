@@ -1,26 +1,47 @@
-<div class="skillsHauptDiv">
-    <div class="skillDiv" id="skills">
-        <div class="renderSkills">
-            <div *ngFor="let skill of skills; let i = index" class="imgAndSpan">
-                <div data-aos="zoom-in-up" class="imgAndSpanDiv">
-                    <img class="skillImg" src="assets/img/Icon/{{skill.img}}">
-                    <span class="skillName">{{skill.name}}</span>
-                </div>
-            </div>
-        </div>
-        <div class="headlineSkillsAndText" data-aos="zoom-in-up">
-            <div class="headlineAndimg">
-                <h1>My skills</h1>
-                <img src="assets/img/Vector 1.png">
-            </div>
-            <div class="spanAndBtn">
-                <span class="spanText">I have grown my frontend developments skills that have allowed me to create
-                    different real projects.</span>
-                <a href="#contact"><button data-aos="zoom-in-up" class="getIntTouchBtn">Get in touch</button></a>
-            </div>
-        </div>
+<div class="skills-container" id="skills">
+
+
+  <div class="skills-icons">
+
+    <div *ngFor="let skill of skills; let i = index" class="skills-icons-row">
+
+      <div data-aos="zoom-in-up" class="skill-icon">
+
+        <img src="assets/img/Icon/{{skill.img}}">
+
+        <span>{{skill.name}}</span>
+
+
+      </div>
     </div>
-    <div class="lBlueGrafic">
-        <img src="assets/img/L. blue 1.png">
+  </div>
+
+
+
+
+  <div class="skills-text">
+
+    <h1 data-aos="zoom-in-up">My Skills</h1>
+
+    <div data-aos="zoom-in-up" class="skills-subheadline">
+
+      I have grown my frontend developments skills that have allowed me to create different real projects.
+
     </div>
+
+    <div data-aos="zoom-in-up" class="contact-btn">
+      <a href="#contact">
+        <button> Get in touch </button>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="blue-line"></div>
+
+  <div class="LBlue-shadow">
+
+    <img src="assets/img/L. blue 1.png">
+
+  </div>
 </div>

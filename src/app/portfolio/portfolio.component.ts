@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
   projekte: any = [
     {
@@ -41,5 +46,6 @@ export class PortfolioComponent {
       linkGit: 'https://github.com/FabianFle/Ring-Of-Fire.git',
     },
   ];
+
 
 }
