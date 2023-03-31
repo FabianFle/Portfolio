@@ -34,18 +34,19 @@
 .profile-img {
     padding: 8vh 15vh 1vh 15vh;
     position: absolute;
-    width: 35vw;
     height: 75vh;
     object-fit: contain;
 
-    @media(max-width: 1000px) {
-        width: 85%;
+    @media(max-width: 1150px) {
         height: 65vh;
-        padding: 0;
     }
 
-    @media(max-width: 1250px) {
-        padding: 0;
+    @media(max-width: 680px) {
+        padding: 8vh 0vh 0vh 0vh;
+    }
+
+    @media(max-width: 400px) {
+        width: 250px;
     }
 }
 
@@ -71,7 +72,7 @@
 
     @media(max-width: 1000px) {
         position: absolute;
-        top: 80%;
+        top: 60%;
         z-index: 4;
         width: 100%;
     }
@@ -213,10 +214,10 @@
     height: 40vh;
 
     @media(max-width: 1000px) {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
         justify-content: flex-end;
-        height: 55vh;
+        height: 90vh;
     }
 
 }
