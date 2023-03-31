@@ -1,16 +1,13 @@
 .contactHauptDiv {
     position: relative;
     display: block;
-    height: 100vh;
     background: rgb(20, 29, 47);
 }
 
 .contactDiv {
-    z-index: 2;
-    position: absolute;
+    position: relative;
     top: 100px;
-    width: 100vw;
-    max-width: 100%;
+    z-index: 2;
 }
 
 .contactHeadlin {
@@ -148,13 +145,15 @@
     }
 }
 
+.formAndBtn {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 200px;
+}
+
 .goUp {
-    z-index: 5;
-    position: absolute;
     width: 39px;
     height: 39px;
-    right: 100px;
-    top: 850px;
     border-radius: 41px;
 }
 
@@ -176,76 +175,25 @@
 .purpleShadowEffect {
     z-index: 1;
     position: absolute;
-    top: 100px;
+    top: 0;
     transform: rotate(180deg);
     overflow: hidden;
 }
 
-
-.loader {
-    border: 10px solid transparent;
-    border-top-color: #4B47FF;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: pulse 1s infinite ease-in-out;
-    margin: 0 auto;
-    position: absolute;
-}
-
-.loader2 {
-    border: 10px solid transparent;
-    border-top-color: #00BEE8;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: pulse2 1s infinite ease-in-out;
-    margin: 0 auto;
-    position: absolute;
-}
-
-.loaderDiv {
-    position: relative;
-    margin-top: -59px;
-    margin-left: 290px;
-}
-
-@keyframes pulse {
-    0% {
-        transform: rotate(0deg);
-        opacity: 0.5;
-    }
-
-    50% {
-        transform: rotate(180deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        opacity: 0.5;
-    }
-}
-
-@keyframes pulse2 {
-    0% {
-        transform: rotate(180deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: rotate(360deg);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: rotate(540deg);
-        opacity: 1;
-    }
-}
-
 .loaderDNone {
     display: none;
+}
+
+.sendBtnAndEmailSend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailSend {
+    margin-top: 10px;
+    color: white;
 }
 
 .emailSendDiv {
@@ -308,98 +256,21 @@
     }
 }
 
-@media (max-height: 900px) {
-    .contactHauptDiv {
-        height: 130vh;
-    }
-
-    .contactDiv {
-        top: 235px;
-    }
-
-    .goUp {
-        top: 960px;
-    }
-}
-
-@media (max-width: 820px) {
-    .purpleShadowEffect {
-        top: 0px;
-    }
-}
-
-@media (max-height: 780px) {
-    .contactHauptDiv {
-        height: 180vh;
-    }
-
-    .contactDiv {
-        top: 400px;
-    }
-
-    .goUp {
-        top: 1160px;
-    }
-}
-
-@media (max-height: 740px) {
-    .contactDiv {
-        top: 680px;
-    }
-
-    .contactHauptDiv {
-        height: 200vh;
-    }
-
-    .goUp {
-        top: 1430px;
-    }
-
-    .purpleShadowEffect {
-        top: 550px;
-    }
-}
-
-@media (max-height: 680px) {
-    .contactHauptDiv {
-        height: 300vh;
-    }
-
-    .contactDiv {
-        top: 960px;
-    }
-
-    .goUp {
-        top: 1710px;
-    }
-}
-
 @media (max-width: 680px) {
 
     .contactInfosAndInputs {
         margin-left: 10px;
         margin-right: 10px;
     }
-}
 
-@media (max-width: 600px) {
-
-    .goUp {
-        right: 40px;
-    }
-}
-
-@media (max-width: 540px) {
     .purpleShadowEffect {
-        top: -70px;
+        img {
+            height: 400px;
+        }
     }
 }
 
 @media (max-width: 500px) {
-
-    .goUp {
-        right: 40px;
-    }
 
     .contactHeadlin {
         h1 {
@@ -417,23 +288,28 @@
     }
 }
 
+@media (max-width: 460px) {
+
+    .goUp {
+        display: none;
+    }
+}
+
 @media (max-width: 400px) {
     .formInput {
 
         input {
-            width: 250px;
+            width: 200px;
         }
 
         textarea {
-            width: 250px;
+            width: 200px;
         } 
     }
 
-    .purpleShadowEffect {
-        top: 400px;
-
-        img {
-            width: 350px;
+    .contactHeadlin  {
+        h1 {
+            font-size: 45px;
         }
     }
 }

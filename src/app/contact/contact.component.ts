@@ -12,7 +12,7 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  constructor() {}
+  constructor() { }
 
   sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -20,10 +20,6 @@ export class ContactComponent {
     let messageField = this.messageField.nativeElement;
     this.mailSendToServer(nameField, emailField, messageField);
     this.BtnDisable();
-
-    setTimeout(() => {
-      this.BtnDisableFlase();
-    }, 3000);
   }
 
 
@@ -38,35 +34,13 @@ export class ContactComponent {
         body: fd
       }
     )
-    this.examineText(nameField, emailField, messageField);
   }
-
-  examineText(nameField: HTMLInputElement, emailField: HTMLInputElement, messageField: HTMLInputElement) {
-    nameField.value = nameField.value.replace (/<>/, "_");
-    emailField.value = emailField.value.replace (/<>/, "_");
-    messageField.value = messageField.value.replace (/<>/, "_");
-  }
-
 
   BtnDisable() {
     this.nameField.nativeElement.disable = true;
     this.emailField.nativeElement.disable = true;
     this.messageField.nativeElement.disable = true;
-    document.getElementById('loaderDNone')?.classList.remove('loaderDNone');
-  }
-
-
-  BtnDisableFlase() {
-    this.nameField.nativeElement.disable = false;
-    this.emailField.nativeElement.disable = false;
-    this.messageField.nativeElement.disable = false;
-    document.getElementById('loaderDNone')?.classList.add('loaderDNone');
-    document.getElementById('emailSendDiv')?.classList.remove('loaderDNone');
-
-    setTimeout(() => {
-      document.getElementById('emailSendDiv')?.classList.add('loaderDNone');
-    }, 5000)
-
+    document.getElementById('sendEmail')?.classList.remove('loaderDNone')
     this.inputValueNull();
   }
 
@@ -74,7 +48,14 @@ export class ContactComponent {
     this.nameField.nativeElement.value = '';
     this.emailField.nativeElement.value = '';
     this.messageField.nativeElement.value = '';
+    this.nameField.nativeElement.disable = false;
+    this.emailField.nativeElement.disable = false;
+    this.messageField.nativeElement.disable = false;
+
+    setTimeout(() => {
+      document.getElementById('sendEmail')?.classList.add('loaderDNone');
+    }, 5000);
   }
 
-  
+
 }

@@ -20,36 +20,27 @@
                     </span>
                 </div>
             </div>
-            <div>
+            <div class="formAndBtn">
                 <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
                     <input required type="text" placeholder="Your name" #nameField data-aos="zoom-in-up">
                     <input required type="email" placeholder="Your email" #emailField data-aos="zoom-in-up">
                     <textarea required cols="30" rows="10" placeholder="Your message" #messageField
                         data-aos="zoom-in-up"></textarea>
-                    <div data-aos="zoom-in-up">
-                        <button class="sendMessageBtn" #sendButton>Send
-                            message
-                            :)</button>
-                    </div>
-                    <div class="loaderDiv loaderDNone" id="loaderDNone">
-                        <div class="loader"></div>
-                        <div class="loader2"></div>
-                    </div>
-                    <div class="emailSendDiv loaderDNone" id="emailSendDiv">
-                        <span>
-                            E-Mail has been sent.
-                        </span>
+                    <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
+                        <button id="sendBtn" class="sendMessageBtn" #sendButton>Send
+                            message :)
+                        </button>
+                        <div class="emailSend loaderDNone" id="sendEmail">E-Mail has been sent.</div>
                     </div>
                 </form>
+                <div class="goUp" data-aos="fade-in">
+                    <a href="#"><img class="goUpImg" src="assets/img/Icon/Go up button.png"></a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="purpleShadowEffect">
         <img src="assets/img/Purple-shadow.png">
-    </div>
-
-    <div class="goUp" data-aos="fade-in">
-        <a href="#"><img class="goUpImg" src="assets/img/Icon/Go up button.png"></a>
     </div>
 </div>
