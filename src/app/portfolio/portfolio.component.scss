@@ -79,7 +79,7 @@
   justify-content: space-between;
 
   @media(max-width: 1000px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     padding-left: 8px;
     padding-right: 8px;
@@ -104,7 +104,7 @@
 
 .column-reverse {
   @media(max-width: 1000px) {
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
   }
 }
 
@@ -177,6 +177,7 @@
   border-radius: 10px;
   transition: all 225ms ease-in-out;
   text-decoration: none;
+  border: none;
   color: white;
   align-items: center;
   display: flex;
@@ -185,10 +186,10 @@
     font-size: calc(16px + 0.390625vw);
   }
 
-
   &:hover {
     cursor: pointer;
     background-color: #00BEE8;
+    box-shadow: 0 0 5px #00BEE8;
   }
 }
 

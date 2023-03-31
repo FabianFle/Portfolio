@@ -14,14 +14,6 @@ export class PortfolioComponent implements OnInit {
 
   projekte: any = [
     {
-      name: 'Portfolio',
-      img: 'portfolioFrame.png',
-      programmingLanguage: 'Angular | TypeScript | HTML | CSS',
-      text: 'Interactive portfolio demonstrating my front-end development skills and creativity.',
-      link: '#',
-      linkGit: 'https://github.com/FabianFle/Portfolio.git',
-    },
-    {
       name: 'Join',
       img: 'JoinFrame.png',
       programmingLanguage: 'JavaScript | HTML | CSS | Git',
@@ -44,6 +36,14 @@ export class PortfolioComponent implements OnInit {
       text: 'Remote card drinking game with synchronized gameplay.',
       link: 'https://ringoffireff.web.app/',
       linkGit: 'https://github.com/FabianFle/Ring-Of-Fire.git',
+    },
+    {
+      name: 'Portfolio',
+      img: 'portfolioFrame.png',
+      programmingLanguage: 'Angular | TypeScript | HTML | CSS',
+      text: 'Interactive portfolio demonstrating my front-end development skills and creativity.',
+      link: '#',
+      linkGit: 'https://github.com/FabianFle/Portfolio.git',
     },
   ];
 

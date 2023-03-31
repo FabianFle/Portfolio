@@ -12,6 +12,8 @@
 }
 
 .skills-icons {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -49,7 +51,7 @@
 
     &:hover {
       cursor: pointer;
-      animation: bounce 225ms ease-in-out;
+      animation: bounce 425ms ease-in-out;
     }
   }
 }
@@ -150,11 +152,18 @@
 
 .LBlue-shadow {
   position: absolute;
+  z-index: 2;
   top: 10%;
 
   img {
     z-index: 2;
     width: 20vw;
-    height: 120vh;
+    height: 80vh;
+  }
+
+  @media(max-width: 800px) {
+    img {
+      height: 100vh;
+    }
   }
 }

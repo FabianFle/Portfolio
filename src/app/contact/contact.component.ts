@@ -22,7 +22,6 @@ export class ContactComponent {
     this.BtnDisable();
   }
 
-
   async mailSendToServer(nameField: HTMLInputElement, emailField: HTMLInputElement, messageField: HTMLInputElement) {
     let fd = new FormData();
     fd.append('nameField', nameField.value)
@@ -37,10 +36,10 @@ export class ContactComponent {
   }
 
   BtnDisable() {
-    this.nameField.nativeElement.disable = true;
-    this.emailField.nativeElement.disable = true;
-    this.messageField.nativeElement.disable = true;
-    document.getElementById('sendEmail')?.classList.remove('loaderDNone')
+    this.nameField.nativeElement.disabled = true;
+    this.emailField.nativeElement.disabled = true;
+    this.messageField.nativeElement.disabled = true;
+    document.getElementById('loader')?.classList.remove('loaderDNone');
     this.inputValueNull();
   }
 
@@ -48,14 +47,23 @@ export class ContactComponent {
     this.nameField.nativeElement.value = '';
     this.emailField.nativeElement.value = '';
     this.messageField.nativeElement.value = '';
-    this.nameField.nativeElement.disable = false;
-    this.emailField.nativeElement.disable = false;
-    this.messageField.nativeElement.disable = false;
 
+    // Ladeanimation ausblenden und Bestätigung anzeigen
     setTimeout(() => {
-      document.getElementById('sendEmail')?.classList.add('loaderDNone');
-    }, 5000);
+      document.getElementById('loader')?.classList.add('loaderDNone');
+      document.getElementById('sendEmail')?.classList.remove('loaderDNone');
+
+      // Bestätigung ausblenden
+      setTimeout(() => {
+        document.getElementById('sendEmail')?.classList.add('loaderDNone');
+
+        // Felder aktivieren
+        setTimeout(() => {
+          this.nameField.nativeElement.disabled = false;
+          this.emailField.nativeElement.disabled = false;
+          this.messageField.nativeElement.disabled = false;
+        }, 5000);
+      }, 5000);
+    }, 3000);
   }
-
-
 }
