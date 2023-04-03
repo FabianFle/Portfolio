@@ -27,7 +27,7 @@ export class ContactComponent {
     fd.append('nameField', nameField.value)
     fd.append('emailField', emailField.value)
     fd.append('messageField', messageField.value)
-    await fetch('https://fabianflegler.de/send_mail.php',
+    await fetch('https://www.fabianflegler.de/send_mail.php',
       {
         method: 'POST',
         body: fd

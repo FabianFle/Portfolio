@@ -48,6 +48,28 @@
     display: none;
 }
 
+// ===========================
+// ===== - 27-30 zoll - ======
+// ===========================
+
+@media (min-width: 2000px) {
+    .headerDiv {
+        height: 200px;
+    }
+
+    .headerMenu {
+        a {
+            font-size: 50px;
+        }
+    }
+
+    .headerImg {
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
 
 // ===========================
 // ======== - Media - ========

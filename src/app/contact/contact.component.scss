@@ -261,6 +261,54 @@
     }
 }
 
+// ===========================
+// ===== - 27-30 zoll - ======
+// ===========================
+
+
+@media (min-width: 2000px) {
+
+    .formInput {
+        input {
+            width: 1000px;
+            height: 100px;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+
+        textarea {
+            width: 1000px;
+            height: 350px;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+    }
+
+    .contactHeadlin {
+        h1 {
+            font-size: 160px;
+        }
+    }
+
+    .contactInfos {
+        max-width: none;
+    }
+
+    .infoSpan {
+        font-size: 30px;
+    }
+
+    .headInfosSpan {
+        font-size: 70px;
+    }
+
+    .sendMessageBtn {
+        width: 400px;
+        height: 130px;
+        font-size: 40px;
+        border-radius: 20px;
+    }
+}
 
 
 // ===========================

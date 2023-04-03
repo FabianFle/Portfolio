@@ -67,6 +67,40 @@
     }
 }
 
+// ===========================
+// ===== - 27-30 zoll - ======
+// ===========================
+
+@media (min-width: 2000px) {
+    .footerDiv {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footerIcon {
+       img {
+        object-fit: contain;
+        height: 60px;
+       } 
+    }
+
+    .footerCopyright {
+        font-size: 40px;
+    }
+
+    .footerLogo {
+        img {
+            height: 100px;
+        }
+
+        a {
+            font-size: 35px;
+        }
+    }
+}
+
 
 // ===========================
 // ======== - Media - ========
