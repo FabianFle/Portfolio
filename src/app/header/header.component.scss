@@ -26,6 +26,7 @@
 
 .headerMenu {
     margin-right: 100px;
+    display: flex;
 
     a {
         color: white;
@@ -44,8 +45,26 @@
     }
 }
 
+.de-en {
+    &:hover {
+        cursor: pointer;
+        color: rgb(0, 190, 232);
+    }
+}
+
 .d-none {
     display: none;
+}
+
+.stroke {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.language {
+    color: #4B47FF !important;
 }
 
 // ===========================
@@ -75,13 +94,13 @@
 // ======== - Media - ========
 // ===========================
 
-@media (min-width: 760px) {
+@media (min-width: 960px) {
     .headerMenuMobilDiv {
         display: none;
     }
 }
 
-@media (max-width: 759px) {
+@media (max-width: 959px) {
 
     .headerMenu {
         display: none;

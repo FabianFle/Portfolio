@@ -30,14 +30,6 @@ export class PortfolioComponent implements OnInit {
       linkGit: 'https://github.com/FabianFle/El-Pollo-Loco.git',
     },
     {
-      name: 'Ring of Fire',
-      img: 'ringoffireFrame.png',
-      programmingLanguage: 'Angular | TypeScript | HTML | CSS | Firebase',
-      text: 'Remote card drinking game with synchronized gameplay.',
-      link: 'https://ringoffireff.web.app/',
-      linkGit: 'https://github.com/FabianFle/Ring-Of-Fire.git',
-    },
-    {
       name: 'Portfolio',
       img: 'portfolioFrame.png',
       programmingLanguage: 'Angular | TypeScript | HTML | CSS',

@@ -96,8 +96,8 @@
 
     @media(max-width: 1000px) {
         position: absolute;
+        z-index: 9;
         top: 40%;
-        z-index: 4;
         width: 100%;
     }
 
