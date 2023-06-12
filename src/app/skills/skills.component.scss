@@ -119,7 +119,13 @@
   border-bottom: 4px solid #4B47FF;
   border-radius: 4px;
   min-width: 15vh;
-  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.blue-Line-Headline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .contact-btn {
