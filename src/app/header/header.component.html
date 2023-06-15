@@ -8,10 +8,10 @@
             <a href="#skills" translate>Skills</a>
             <a href="#portfolio" translate>Portfolio</a>
         </div>
-        <!-- <div>
+        <div>
             <a (click)="translateSite('en')"><span [ngClass]="{'language': selectedLanguage === 'en'}">EN</span></a>
             <a (click)="translateSite('de')"> <span [ngClass]="{'language': selectedLanguage === 'de'}">DE</span> </a>
-        </div> -->
+        </div>
     </div>
 
     <div class="headerMenuMobilDiv">
@@ -24,13 +24,13 @@
                 <li><a (click)="closeMenu()" href="#skills" translate>Skills</a></li>
                 <li><a (click)="closeMenu()" href="#portfolio" translate>Portfolio</a></li>
                 <li><a (click)="closeMenu()" href="#contact" translate>Contact</a></li>
-                <!-- <li>
+                <li>
                     <a (click)="translateSite('en')" (click)="closeMenu()"><span class="de-en"
                             [ngClass]="{'language': selectedLanguage === 'en'}">EN</span></a>
                     <span class="stroke">|</span>
                     <a (click)="translateSite('de')" (click)="closeMenu()"><span class="de-en"
                             [ngClass]="{'language': selectedLanguage === 'de'}">DE</span></a>
-                </li> -->
+                </li>
             </ul>
         </div>
     </div>
